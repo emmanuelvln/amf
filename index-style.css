@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Evogria;
+    src: url('fonts/Evogria.otf');
+}
+
+@font-face {
+    font-family: Sofia;
+    src: url('fonts/Sofia.otf');
+}
+
+@font-face {
+    font-family: Blanch;
+    src: url('fonts/Blanch.otf');
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #404040ff;
+}
+
+#header {
+    background-color: #262626ff;
+    font-family: Sofia;
+    color: white;
+    text-align: center;
+    padding-bottom: 7px;
+    font-size: 50px;
+}
+
+#ruban1 {
+    position: relative;
+    text-align: center;
+    color: #404040ff;
+    font-family: Sofia;
+    font-size: 22px;
+}
+
+#ruban1img {
+    display: block;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 35px;
+}
+
+#wantmore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#photo {
+    margin-top: 35px;
+    position: relative;
+    text-align: center;
+    color: #404040ff;
+    font-family: Sofia;
+    font-size: 22px;
+}
+
+#flower1 {
+    width: 220px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#rubanphoto {
+    width: 286px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#flower1text {
+    font-family: Blanch;
+    font-size: 32px;
+    position: absolute;
+    top: 202px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
