@@ -64,6 +64,7 @@ body {
 
 #flower1 {
     width: 220px;
+    height: 220px;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -77,11 +78,58 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#flower1text {
+#flowertext {
     font-family: Blanch;
     font-size: 32px;
     position: absolute;
     top: 202px;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #404040ff;
+}
+
+.carte {
+    margin-top: 35px;
+    background-color: transparent;
+    width: 220px;
+    height: 220px;
+    perspective: 1000px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carte-inter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.carte:hover .carte-inter {
+    transform: rotateY(180deg);
+}
+
+.carte-dev, .carte-der {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.carte-der {
+    background-color: #262626ff;
+    color: #404040ff;
+    transform: rotateY(180deg);
+}
+
+.legende {
+    text-align: center;
+    margin-top: 40%;
+    font-family: Sofia;
+    font-size: 20px;
+    color: white;
 }
