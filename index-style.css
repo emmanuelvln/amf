@@ -73,7 +73,7 @@ body {
 #rubanphoto {
     width: 286px;
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
