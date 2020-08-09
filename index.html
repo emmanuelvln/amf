@@ -45,7 +45,7 @@
 	         		console.log("No more images");
 	         		$('#ruban2').fadeIn();
 	         	} else{
-					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
+					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</br> ⚭ </br>" + data[count+1].nomlatin + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
 					count++;
 					if(count==data.length){
 						count=1
@@ -69,7 +69,7 @@
 
 <div id="ruban1">
     <img id="ruban1img" src="imgs/ruban1.png">
-    <div id="wantmore">I want more flowers!</div>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alwaysmoreflowers/" id="wantmore">I want more flowers!</a>
 </div>
 
 <div id="content">
@@ -84,7 +84,7 @@
  			</div>
 
 	 	<div class="carte-der">
-	 		<div class="legende">Campanula cochleariifolia</div>
+	 		<div class="legende">Campanule à feuilles de Cochléaire </br> ⚭ </br> Campanula cochleariifolia</div>
 	 		<img id="rubanphoto" src="imgs/rubanphoto.png">
 	 		<div id="flowertext">Flower 1</div>
 	   	</div>
@@ -104,7 +104,7 @@
  			</div>
 
 	 	<div class="carte-der">
-	 		<div class="legende">Gymnadenis nigra</div>
+	 		<div class="legende">Nigritelle noire </br> ⚭ </br> Gymnadenis nigra</div>
 	 		<img id="rubanphoto" src="imgs/rubanphoto.png">
 	 		<div id="flowertext">Flower 2</div>
 	   	</div>
@@ -116,7 +116,7 @@
 
 <div id="ruban2">
     <img id="ruban1img" src="imgs/ruban1.png">
-    <div id="wantmore">T hat's all folks!</div>
+    <div id="wantmore">that's all folks!</div>
 </div>
 
 </body>

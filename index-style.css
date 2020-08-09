@@ -13,6 +13,11 @@
     src: url('fonts/Blanch.otf');
 }
 
+@font-face {
+    font-family: KaushanScript;
+    src: url('fonts/KaushanScript.otf');
+}
+
 body {
     margin-top: 0;
     margin-bottom: 0;
@@ -64,6 +69,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Sofia;
+    color: #404040ff;
+    text-decoration: none;
 }
 
 #photo {
@@ -93,7 +100,7 @@ body {
 
 #flowertext {
     font-family: Blanch;
-    font-size: 32px;
+    font-size: 30px;
     position: absolute;
     top: 204px;
     left: 50%;
@@ -145,8 +152,8 @@ body {
 
 .legende {
     text-align: center;
-    margin-top: 40%;
+    margin-top: 10%;
     font-family: Sofia;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
