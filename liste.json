@@ -1,10 +1,10 @@
 [
     {
-        "numero": "1",
+        "numero": 1,
         "nom": "Rosy"
     },
     {
-        "numero": "2",
+        "numero": 2,
         "nom": "Violy"
     }
 ]
