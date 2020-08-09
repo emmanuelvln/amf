@@ -45,7 +45,7 @@
 	         		console.log("No more images");
 	         		$('#ruban2').fadeIn();
 	         	} else{
-					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</br> ⚭ </br>" + data[count+1].nomlatin + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
+					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</br> ⚭ </br>" + data[count+1].nomscient + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
 					count++;
 					if(count==data.length){
 						count=1

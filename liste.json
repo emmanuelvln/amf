@@ -1,52 +1,52 @@
 [
     {
         "numero": 1,
-        "nomlatin": "Campanula cochleariifolia",
+        "nomscient": "Campanula cochleariifolia",
         "nom" : "Campanule à feuilles de Cochléaire"
     },
     {
         "numero": 2,
-        "nomlatin": "Gymnadenis nigra",
+        "nomscient": "Gymnadenis nigra",
         "nom" : "Nigritelle noire"
     },
     {
         "numero": 3,
-        "nomlatin": "Dianthus deltoides",
+        "nomscient": "Dianthus deltoides",
         "nom" : "Œillet à delta"
     },
     {
         "numero": 4,
-        "nomlatin": "Lychnis flos-jovis",
+        "nomscient": "Lychnis flos-jovis",
         "nom" : "Œillet de Jupiter"
     },
     {
         "numero": 5,
-        "nomlatin": "Gymnadenia conopsea",
+        "nomscient": "Gymnadenia conopsea",
         "nom" : "Orchis moucheron"
     },
     {
         "numero": 6,
-        "nomlatin": "Achillea nana",
+        "nomscient": "Achillea nana",
         "nom" : "Achillée naine"
     },
     {
         "numero": 7,
-        "nomlatin": "Myosotis alpestris",
+        "nomscient": "Myosotis alpestris",
         "nom" : "Myosotis des Alpes"
     },
     {
         "numero": 8,
-        "nomlatin": "Silene acaulis",
+        "nomscient": "Silene acaulis",
         "nom" : "Silène acaule"
     },
     {
         "numero": 9,
-        "nomlatin": "n/a",
-        "nom" : "n/a"
+        "nomscient": "n / a",
+        "nom" : "n / a"
     },
     {
         "numero": 10,
-        "nomlatin": "Carduus acanthoides",
+        "nomscient": "Carduus acanthoides",
         "nom" : "Chardon faux-acanthe"
     }
 ]
