@@ -48,5 +48,10 @@
         "numero": 10,
         "nomscient": "Carduus acanthoides",
         "nom" : "Chardon faux-acanthe"
+    },
+    {
+        "numero": 11,
+        "nomscient": "Doronicum grandiflorum",
+        "nom" : "Doronic à grandes fleurs"
     }
 ]
