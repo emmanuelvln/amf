@@ -1,7 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>always more flowers</title>
 <link rel="stylesheet" type="text/css" href="index-style.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	var count=1;
+		$(document).ready(function(){
+			SetValues();
+			$(window).scroll(function(){
+				//Will check if the user has reached bottom of a PAGE
+				SetValues();
+				//Check for user has reached bottom of Page
+				if($(window).scrollTop()>=($(document).height()-window.innerHeight-1)){
+//					$('#loading').fadeIn();
+					setTimeout("appendContent()", 10);
+				}
+			});
+		});
+
+		var appendContent=function(){
+
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+		            appendData(data);
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+
+		    function appendData(data) {
+		    	console.log(data.length)
+	         	if(count==data.length-1){
+	         		console.log("No more images");
+	         	} else{
+					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
+					count++;
+					if(count==data.length){
+						count=1
+					}
+					$('#loading').fadeOut();
+		   		}
+	        }
+		};
+		var SetValues=function(){
+			$('table tr:first-child td:nth-child(2)').html($(window).scrollTop());
+			$('table tr:first-child td:nth-child(4)').html($(document).height());
+			$('table tr:first-child td:nth-child(6)').html(window.innerHeight);//$(window).height()
+		};
+
+</script>
+
 </head>
 
 <body>
@@ -13,64 +71,46 @@
     <div id="wantmore">I want more flowers!</div>
 </div>
 
- <div class="carte">
+<div id="content">
+	<div class="carte">
 
- 	<div class="carte-inter">
+ 		<div class="carte-inter">
 
- 		<div class="carte-dev">
- 			<img id="rubanphoto" src="imgs/rubanphoto.png">
- 			<div id="flowertext">Flower 1</div>
- 			<img src="photos/flower1.png" style="width: 220px; height: 220px;">
- 		</div>
+ 			<div class="carte-dev">
+ 				<img id="rubanphoto" src="imgs/rubanphoto.png">
+ 				<div id="flowertext">Flower 1</div>
+ 				<img src="photos/flower1.png" style="width: 220px; height: 220px;">
+ 			</div>
 
- 	<div class="carte-der">
- 		<div class="legende">Gymnadenis nigra</div>
- 		<img id="rubanphoto" src="imgs/rubanphoto.png">
- 		<div id="flowertext">Flower 1</div>
-   	</div>
+	 	<div class="carte-der">
+	 		<div class="legende">Campanula cochleariifolia</div>
+	 		<img id="rubanphoto" src="imgs/rubanphoto.png">
+	 		<div id="flowertext">Flower 1</div>
+	   	</div>
 
-   	</div>
+	   	</div>
 
-</div>
+	</div>
 
- <div class="carte">
+	<div class="carte">
 
- 	<div class="carte-inter">
+ 		<div class="carte-inter">
 
- 		<div class="carte-dev">
- 			<img id="rubanphoto" src="imgs/rubanphoto.png">
- 			<div id="flowertext">Flower 2</div>
- 			<img src="photos/flower2.png" style="width: 220px; height: 220px;">
- 		</div>
+ 			<div class="carte-dev">
+ 				<img id="rubanphoto" src="imgs/rubanphoto.png">
+ 				<div id="flowertext">Flower 2</div>
+ 				<img src="photos/flower2.png" style="width: 220px; height: 220px;">
+ 			</div>
 
- 	<div class="carte-der">
- 		<div class="legende">Agapanthus praecox</div>
- 		<img id="rubanphoto" src="imgs/rubanphoto.png">
- 		<div id="flowertext">Flower 2</div>
-   	</div>
-   	
-   	</div>
+	 	<div class="carte-der">
+	 		<div class="legende">Gymnadenis nigra</div>
+	 		<img id="rubanphoto" src="imgs/rubanphoto.png">
+	 		<div id="flowertext">Flower 2</div>
+	   	</div>
+	   	
+	   	</div>
 
-</div> 
-
- <div class="carte">
-
- 	<div class="carte-inter">
-
- 		<div class="carte-dev">
- 			<img id="rubanphoto" src="imgs/rubanphoto.png">
- 			<div id="flowertext">Flower 3</div>
- 			<img src="photos/flower3.png" style="width: 220px; height: 220px;">
- 		</div>
-
- 	<div class="carte-der">
- 		<div class="legende">Rosa chinensis</div>
- 		<img id="rubanphoto" src="imgs/rubanphoto.png">
- 		<div id="flowertext">Flower 3</div>
-   	</div>
-   	
-   	</div>
-
+	</div>
 </div>
 
 </body>

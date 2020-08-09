@@ -19,7 +19,9 @@ body {
     margin-right: 0;
     margin-left: 0;
     background-color: #404040ff;
+/*    overflow: hidden;*/
 }
+
 
 #header {
     background-color: #262626ff;
@@ -51,6 +53,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: Sofia;
 }
 
 #photo {
@@ -82,10 +85,14 @@ body {
     font-family: Blanch;
     font-size: 32px;
     position: absolute;
-    top: 202px;
+    top: 204px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #404040ff;
+}
+
+#content {
+    margin-bottom: 35px;
 }
 
 .carte {
