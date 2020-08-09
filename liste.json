@@ -1,42 +1,52 @@
 [
     {
         "numero": 1,
-        "nom": "Campanula cochleariifolia"
+        "nomlatin": "Campanula cochleariifolia",
+        "nom" : "Campanule à feuilles de Cochléaire"
     },
     {
         "numero": 2,
-        "nom": "Gymnadenis nigra"
+        "nomlatin": "Gymnadenis nigra",
+        "nom" : "Nigritelle noire"
     },
     {
         "numero": 3,
-        "nom": "Dianthus deltoides"
+        "nomlatin": "Dianthus deltoides",
+        "nom" : "Œillet à delta"
     },
     {
         "numero": 4,
-        "nom": "Lychnis flos-jovis"
+        "nomlatin": "Lychnis flos-jovis",
+        "nom" : "Œillet de Jupiter"
     },
     {
         "numero": 5,
-        "nom": "Gymnadenia conopsea"
+        "nomlatin": "Gymnadenia conopsea",
+        "nom" : "Orchis moucheron"
     },
     {
         "numero": 6,
-        "nom": "Achillea nana"
+        "nomlatin": "Achillea nana",
+        "nom" : "Achillée naine"
     },
     {
         "numero": 7,
-        "nom": "Myosotis alpestris"
+        "nomlatin": "Myosotis alpestris",
+        "nom" : "Myosotis des Alpes"
     },
     {
         "numero": 8,
-        "nom": "Silene acaulis"
+        "nomlatin": "Silene acaulis",
+        "nom" : "Silène acaule"
     },
     {
         "numero": 9,
-        "nom": "Achillea ?"
+        "nomlatin": "N/A",
+        "nom" : "N/A"
     },
     {
         "numero": 10,
-        "nom": "Carduus acanthoides"
+        "nomlatin": "Carduus acanthoides",
+        "nom" : "Chardon faux-acanthe"
     }
 ]
