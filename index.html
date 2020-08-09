@@ -42,13 +42,13 @@
 		    	console.log(data.length)
 	         	if(count==data.length-1){
 	         		console.log("No more images");
+	         		$('#ruban2').fadeIn();
 	         	} else{
 					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
 					count++;
 					if(count==data.length){
 						count=1
 					}
-					$('#loading').fadeOut();
 		   		}
 	        }
 		};
@@ -111,6 +111,11 @@
 	   	</div>
 
 	</div>
+</div>
+
+<div id="ruban2">
+    <img id="ruban1img" src="imgs/ruban1.png">
+    <div id="wantmore">T hat's all folks!</div>
 </div>
 
 </body>

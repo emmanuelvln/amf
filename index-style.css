@@ -40,6 +40,16 @@ body {
     font-size: 22px;
 }
 
+#ruban2 {
+    display: none;
+    position: relative;
+    text-align: center;
+    color: #404040ff;
+    font-family: Sofia;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
 #ruban1img {
     display: block;
     margin-top: 35px;
