@@ -1,33 +1,24 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>always more flowers</title>
 	<link rel="icon" href="https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/imgs/favicon.png" type="image/icon type">
 	<link rel="stylesheet" type="text/css" href="index-style.css">
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<title>always more flowers</title>
 
-<script type="text/javascript">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-	var count=1;
+	<script type="text/javascript">
 		$(document).ready(function(){
-			SetValues();
-			$(window).scroll(function(){
-				//Will check if the user has reached bottom of a PAGE
-				SetValues();
-				//Check for user has reached bottom of Page
-				if($(window).scrollTop()>=($(document).height()-window.innerHeight-1)){
-//					$('#loading').fadeIn();
-					setTimeout("appendContent()", 10);
-				}
-			});
+			appendContent();
 		});
 
 		var appendContent=function(){
-
 		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
 		        .then(function (response) {
 		            return response.json();
@@ -38,85 +29,35 @@
 		        .catch(function (err) {
 		            console.log('error: ' + err);
 		        });
-
-		    function appendData(data) {
-		    	console.log(data.length)
-	         	if(count==data.length-1){
-	         		console.log("No more images");
-	         		$('#ruban2').fadeIn();
-	         	} else{
-					$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> <img src='photos/flower" + (data[count].numero + 1) + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[count+1].nom + "</br> ⚭ </br>" + data[count+1].nomscient + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + (data[count].numero + 1) + "</div> </div> </div> </div>");
-					count++;
-					if(count==data.length){
-						count=1
-					}
-		   		}
-	        }
 		};
-		var SetValues=function(){
-			$('table tr:first-child td:nth-child(2)').html($(window).scrollTop());
-			$('table tr:first-child td:nth-child(4)').html($(document).height());
-			$('table tr:first-child td:nth-child(6)').html(window.innerHeight);//$(window).height()
-		};
-
-</script>
-
+		   
+		function appendData(data) {
+			console.log(data.length)
+			$('#ruban2').fadeIn();
+			for (i = 0; i < data.length; i++) {
+				console.log("hi" + i);
+				$('#content').append("<div class='carte'> <div class='carte-inter'> <div class='carte-dev'> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + data[i].numero + "</div> <img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'> </div> <div class='carte-der'> <div class='legende'>" + data[i].nom + "</br> ⚭ </br>" + data[i].nomscient + "</div> <img id='rubanphoto' src='imgs/rubanphoto.png'> <div id='flowertext'>Flower " + data[i].numero + "</div> </div> </div> </div>");
+			} 
+	    }
+	</script>
 </head>
 
 <body>
+	<div id="header">always more flowers</div>
 
-<div id="header">always more flowers</div>
+	<div id="ruban1">
+	    <img id="ruban1img" src="imgs/ruban1.png">
+	    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alwaysmoreflowers/" id="wantmore">I want more flowers!</a>
+	</div>
 
-<div id="ruban1">
-    <img id="ruban1img" src="imgs/ruban1.png">
-    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alwaysmoreflowers/" id="wantmore">I want more flowers!</a>
-</div>
-
-<div id="content">
-	<div class="carte">
-
- 		<div class="carte-inter">
-
- 			<div class="carte-dev">
- 				<img id="rubanphoto" src="imgs/rubanphoto.png">
- 				<div id="flowertext">Flower 1</div>
- 				<img src="photos/flower1.png" style="width: 220px; height: 220px;">
- 			</div>
-
-	 	<div class="carte-der">
-	 		<div class="legende">Campanule à feuilles de Cochléaire </br> ⚭ </br> Campanula cochleariifolia</div>
-	 		<img id="rubanphoto" src="imgs/rubanphoto.png">
-	 		<div id="flowertext">Flower 1</div>
-	   	</div>
-
-	   	</div>
+	<div id="content">
 
 	</div>
 
-	<div class="carte">
-
- 		<div class="carte-inter">
-
- 			<div class="carte-dev">
- 				<img id="rubanphoto" src="imgs/rubanphoto.png">
- 				<div id="flowertext">Flower 2</div>
- 				<img src="photos/flower2.png" style="width: 220px; height: 220px;">
- 			</div>
-
-	 	<div class="carte-der">
-	 		<div class="legende">Nigritelle noire </br> ⚭ </br> Gymnadenis nigra</div>
-	 		<img id="rubanphoto" src="imgs/rubanphoto.png">
-	 		<div id="flowertext">Flower 2</div>
-	   	</div>
-	   	
-	   	</div>
-
+	<div id="ruban2">
+	    <img id="ruban1img" src="imgs/ruban1.png">
+	    <div id="wantmore">that's all folks!</div>
 	</div>
-</div>
-
-<div id="ruban2">
-    <img id="ruban1img" src="imgs/ruban1.png">
-    <div id="wantmore">that's all folks!</div>
-</div>
-
 </body>
+
+</html>
