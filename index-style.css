@@ -63,6 +63,24 @@ body {
     height: 35px;
 }
 
+#rubanlegende {
+    display: block;
+    padding-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 20px;
+}
+
+#infolegende {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: Blanch;
+    color: #262626ff;
+    text-align: center;
+    font-size: 20px;
+}
+
 #wantmore {
     position: absolute;
     top: 50%;
@@ -142,6 +160,7 @@ body {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-color: #262626ff;
 }
 
 .carte-der {
@@ -152,8 +171,33 @@ body {
 
 .legende {
     text-align: center;
-    margin-top: 10%;
     font-family: Sofia;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
+    line-height: 3px;
+}
+
+.legende br {
+	line-height: 0px;
+}
+
+.liltexteleg {
+	font-size: 8px;
+}
+
+#datelegende {
+	font-family: Blanch;
+	font-size: 18px;
+}
+
+#moreinfos {
+	line-height: 1px;
+}
+
+.nomscientleg {
+	line-height: 80%;
+}
+
+.nomleg {
+	line-height: 100%;
 }
