@@ -48,6 +48,10 @@
 				$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
 			} 
 	    }
+
+	    function myFunction() {
+		    document.getElementById("header").innerHTML = "always more flowers :)";
+		}
 	</script>
 </head>
 
@@ -90,7 +94,7 @@
 
 	<div id="ruban2">
 	    <img id="ruban1img" src="imgs/ruban1.png">
-	    <div id="wantmore">that's all folks!</div>
+	    <div id="wantmore" onclick="myFunction();">that's all folks!</div>
 	</div>
 </body>
 
