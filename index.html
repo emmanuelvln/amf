@@ -49,9 +49,14 @@
 			} 
 	    }
 
-	    function myFunction() {
-		    document.getElementById("header").innerHTML = "always more flowers :)";
+	    function makeItSmile() {
+		    document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>:)</span>";
 		}
+
+	    function makeItSad() {
+		    document.getElementById("header").innerHTML = "always more flowers";
+		}
+
 	</script>
 </head>
 
@@ -62,6 +67,17 @@
 	    <img id="ruban1img" src="imgs/ruban1.png">
 	    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alwaysmoreflowers/" id="wantmore">I want more flowers!</a>
 	</div>
+
+	<div>
+		<a href="search.html"><img id="tosearchpage" src="imgs/tosearchpage.png"></a>
+	</div>
+
+	<!--
+	<div id="ruban1">
+	    <img id="ruban1img" src="imgs/ruban1.png">
+	    <a href="search.html" id="wantmore">I want my flower!</a>
+	</div>
+	-->
 
 	<div id="content">
 	<!--
@@ -94,7 +110,7 @@
 
 	<div id="ruban2">
 	    <img id="ruban1img" src="imgs/ruban1.png">
-	    <div id="wantmore" onclick="myFunction();">that's all folks!</div>
+	    <div id="wantmore" onclick="makeItSmile();">that's all folks!</div>
 	</div>
 </body>
 

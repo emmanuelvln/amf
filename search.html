@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/imgs/favicon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="search-style.css">
+
+	<title>always more flowers</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		/*
+		$(document).ready(function(){
+			appendContent();
+		});
+
+		var appendContent=function(){
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+		            appendData(data);
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+		};
+
+		function appendData(data) {
+			console.log(data.length)
+			$('#ruban2').fadeIn();
+			for (i = 0; i < data.length; i++) {
+				console.log("hi" + i);
+				$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+			} 
+	    }*/
+
+	    function makeItSmile() {
+		    document.getElementById("header").innerHTML = "always more flowers :)";
+		}
+
+		function getInputValue(){
+			document.getElementById("content").innerHTML = "<div id='content'></div>";
+
+			var inputVal = document.getElementById("superInput").value;
+			console.log(inputVal);
+
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+					console.log(data);
+
+					inputVal = inputVal.trim();
+					var lengthSearch = inputVal.length
+					console.log(lengthSearch);
+					var found = false
+
+					for (i = 0; i < data.length; i++) {
+						var searchStartAlias = data[i].nom
+
+//						searchStartAlias = searchStartAlias.replace(/\s+/g, '');
+						searchStartAlias = searchStartAlias.toLowerCase();
+						searchStartAlias = searchStartAlias.substring(0,lengthSearch);
+
+						var searchStart = (data[i].nom).substring(0,lengthSearch);
+
+						if (searchStart == inputVal) {
+							console.log("1");
+							$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+							found = true
+						} else if (searchStartAlias == inputVal) {
+							console.log("2");
+							$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+							found = true
+						} else if (data[i].numero == inputVal) {
+							console.log("3");
+							$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+							found = true
+						}
+					}
+
+					if (found != true) {
+						$('#content').append("	<div id='error404'>No flower found</div>");
+					}
+
+					
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+		}
+
+	</script>
+</head>
+
+<body>
+	<div id="header"><a id="backhomepage" href="index.html">always more flowers</a></div>
+
+	<div id="ruban1">
+	    <img id="ruban1img" src="imgs/ruban1.png">
+	    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alwaysmoreflowers/" id="wantmore">I want more flowers!</a>
+	</div>
+	
+	<input type="text" placeholder="which one is the one?" id="superInput">
+	<img id="searchButton"src="imgs/searchbutton.png" onclick="getInputValue();">
+
+	<div id="content">
+	<!--
+		<div class='carte'>
+			<div class='carte-inter'>
+				<div class='carte-dev'>
+					<img id='rubanphoto' src='imgs/rubanphoto.png'>
+					<div id='flowertext'>Flower 0</div>
+					<img src='photos/flower2.png' style='width: 220px; height: 220px;'>
+				</div>
+				<div class='carte-der'>
+					<p id="infolegende">INFORMATIONS</p>
+	   				<img id="rubanlegende" src="imgs/rubanlegende.png">
+	   				<div class='legende'>
+	   					<p class="nomleg">Campanule à feuilles de Cochléaire</p>
+	   					<p>⚭</p>
+	   					<p class="nomscientleg">Campanula cochleariifolia</p>
+	   					<p>⚭</p>
+	   					<div id="moreinfos">
+	   					<p class="liltexteleg">le  <span id="datelegende">17/09/2003</span></p>
+	   					<p><span class="liltexteleg">à  </span>Castellane</p>
+	   					</div>
+	   				</div>
+					<img id='rubanphoto' src='imgs/rubanphoto.png'>
+					<div id='flowertext'>Flower 0</div>
+				</div>
+			</div>
+		</div>-->
+
+	</div>
+
+	<div id="ruban2">
+	    <img id="ruban1img" src="imgs/ruban1.png">
+	    <div id="wantmore" onclick="makeItSmile();">that's all folks!</div>
+	</div>
+</body>
+
+</html>
