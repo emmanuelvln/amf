@@ -27,7 +27,6 @@ body {
 /*    overflow: hidden;*/
 }
 
-
 #header {
     background-color: #262626ff;
     font-family: Sofia;
@@ -61,6 +60,14 @@ body {
     margin-right: auto;
     margin-left: auto;
     height: 35px;
+}
+
+#tosearchpage {
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
 }
 
 #rubanlegende {
