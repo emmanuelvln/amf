@@ -15,37 +15,6 @@
 
 	<script type="text/javascript">
 
-		/*
-		$(document).ready(function(){
-			appendContent();
-		});
-
-		var appendContent=function(){
-		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
-		        .then(function (response) {
-		            return response.json();
-		        })
-		        .then(function (data) {
-		            appendData(data);
-		        })
-		        .catch(function (err) {
-		            console.log('error: ' + err);
-		        });
-		};
-
-		function appendData(data) {
-			console.log(data.length)
-			$('#ruban2').fadeIn();
-			for (i = 0; i < data.length; i++) {
-				console.log("hi" + i);
-				$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
-			} 
-		}*/
-
-		function makeItSmile() {
-			document.getElementById("header").innerHTML = "always more flowers :)";
-		}
-
 		$(document).on("keypress", "input", function(e){
 			if(e.which == 13){
 				getInputValue();
@@ -71,25 +40,31 @@
 					var found = false
 
 					for (i = 0; i < data.length; i++) {
-						var searchStartAlias = data[i].nom
-
-//						searchStartAlias = searchStartAlias.replace(/\s+/g, '');
-						searchStartAlias = searchStartAlias.toLowerCase();
-						searchStartAlias = searchStartAlias.substring(0,lengthSearch);
-
 						var searchStart = (data[i].nom).substring(0,lengthSearch);
+						var searchStartAlias = searchStart.toLowerCase();
+
+						var searchStartScient = (data[i].nomscient).substring(0,lengthSearch);
+						var searchStartScientAlias = searchStartScient.toLowerCase();
 
 						if (searchStart == inputVal) {
 							console.log("1");
-							$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+							addCard(data);
 							found = true
 						} else if (searchStartAlias == inputVal) {
 							console.log("2");
-							$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+							addCard(data);
 							found = true
 						} else if (data[i].numero == inputVal) {
 							console.log("3");
-							$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+							addCard(data);
+							found = true
+						} else if (searchStartScient == inputVal) {
+							console.log("4");
+							addCard(data);
+							found = true
+						} else if (searchStartScientAlias == inputVal) {
+							console.log("4");
+							addCard(data);
 							found = true
 						}
 					}
@@ -105,54 +80,31 @@
 		        });
 		}
 
+		function addCard(data) {
+			$('#content').append("<div class='carte'><div class='carte-inter'><div class='carte-dev'><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carte-der'><p id='infolegende'>INFORMATIONS</p><img id='rubanlegende' src='imgs/rubanlegende.png'><div class='legende'><p class='nomleg'>" + data[i].nom + "</p><p>⚭</p><p class='nomscientleg'>" + data[i].nomscient + "</p><p>⚭</p><div id='moreinfos'><p class='liltexteleg'>le  <span id='datelegende'>" + data[i].date + "</span></p><p><span class='liltexteleg'>à </span>" + data[i].lieu + "</p></div></div><img id='rubanphoto' src='imgs/rubanphoto.png'><div id='flowertext'>Flower " + data[i].numero + "</div></div></div></div>");
+		}
+
 	</script>
 </head>
 
 <body>
-	<div id="header"><a id="backhomepage" href="index.html">always more flowers</a></div>
+	<div id="header">always more flowers</div>
 
 	<div id="ruban1">
 	    <img id="ruban1img" src="imgs/ruban1.png">
 	    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alwaysmoreflowers/" id="wantmore">I want more flowers!</a>
 	</div>
-	
+
+	<div id="tohomepageclick">
+		<a href="index.html"><img id="tohomepage" src="imgs/homebutton.png"></a>
+	</div>
+
 	<input type="text" placeholder="which one is the one?" id="superInput">
 	<img id="searchButton"src="imgs/searchbutton.png" onclick="getInputValue();">
 
 	<div id="content">
-	<!--
-		<div class='carte'>
-			<div class='carte-inter'>
-				<div class='carte-dev'>
-					<img id='rubanphoto' src='imgs/rubanphoto.png'>
-					<div id='flowertext'>Flower 0</div>
-					<img src='photos/flower2.png' style='width: 220px; height: 220px;'>
-				</div>
-				<div class='carte-der'>
-					<p id="infolegende">INFORMATIONS</p>
-	   				<img id="rubanlegende" src="imgs/rubanlegende.png">
-	   				<div class='legende'>
-	   					<p class="nomleg">Campanule à feuilles de Cochléaire</p>
-	   					<p>⚭</p>
-	   					<p class="nomscientleg">Campanula cochleariifolia</p>
-	   					<p>⚭</p>
-	   					<div id="moreinfos">
-	   					<p class="liltexteleg">le  <span id="datelegende">17/09/2003</span></p>
-	   					<p><span class="liltexteleg">à  </span>Castellane</p>
-	   					</div>
-	   				</div>
-					<img id='rubanphoto' src='imgs/rubanphoto.png'>
-					<div id='flowertext'>Flower 0</div>
-				</div>
-			</div>
-		</div>-->
-
 	</div>
 
-	<div id="ruban2">
-	    <img id="ruban1img" src="imgs/ruban1.png">
-	    <div id="wantmore" onclick="makeItSmile();">that's all folks!</div>
-	</div>
 </body>
 
 </html>

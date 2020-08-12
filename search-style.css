@@ -37,11 +37,6 @@ body {
     font-size: 50px;
 }
 
-#backhomepage {
-    color: white;
-    text-decoration: none;  
-}
-
 #ruban1 {
     position: relative;
     text-align: center;
@@ -50,22 +45,28 @@ body {
     font-size: 22px;
 }
 
-#ruban2 {
-    display: none;
-    position: relative;
-    text-align: center;
-    color: #404040ff;
-    font-family: Sofia;
-    font-size: 22px;
-    margin-bottom: 35px;
-}
-
 #ruban1img {
     display: block;
     margin-top: 35px;
     margin-right: auto;
     margin-left: auto;
     height: 35px;
+}
+
+#tohomepage {
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+#tohomepageclick {
+    height: 35px;
+    width: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #rubanlegende {
@@ -227,7 +228,7 @@ body {
     font-size: 18px;
     text-align: center;
     width: 334px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 #searchButton {
@@ -236,4 +237,5 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: 15px;
+    cursor: pointer;
 }
