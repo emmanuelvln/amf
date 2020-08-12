@@ -27,6 +27,9 @@ body {
 /*    overflow: hidden;*/
 }
 
+html {
+    scrollbar-width: thin;
+}
 #header {
     background-color: #262626ff;
     font-family: Sofia;
