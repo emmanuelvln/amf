@@ -28,7 +28,6 @@ body {
     margin-right: 0;
     margin-left: 0;
     background-color: #404040ff;
-/*    overflow: hidden;*/
 }
 
 #header {
@@ -40,7 +39,7 @@ body {
     font-size: 50px;
 }
 
-#ruban1 {
+#ribbonTop {
     position: relative;
     text-align: center;
     color: #404040ff;
@@ -48,7 +47,7 @@ body {
     font-size: 22px;
 }
 
-#ruban2 {
+#ribbonBot {
     position: relative;
     text-align: center;
     color: #404040ff;
@@ -57,7 +56,7 @@ body {
     margin-bottom: 35px;
 }
 
-#ruban1img {
+.ribbonImg {
     display: block;
     margin-top: 35px;
     margin-right: auto;
@@ -65,7 +64,7 @@ body {
     height: 35px;
 }
 
-#lilbutton {
+.lilButtonImg {
     height: 35px;
     display: block;
     margin-left: auto;
@@ -73,7 +72,7 @@ body {
     margin-top: 35px;
 }
 
-#lilbuttonclick {
+.lilButton {
     height: 35px;
     width: 35px;
     display: block;
@@ -81,7 +80,7 @@ body {
     margin-left: auto;
 }
 
-#rubanlegende {
+.ribbonLeg {
     display: block;
     padding-top: 10px;
     margin-right: auto;
@@ -89,7 +88,7 @@ body {
     height: 20px;
 }
 
-#infolegende {
+.infoLeg {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -99,7 +98,7 @@ body {
     font-size: 20px;
 }
 
-#wantmore {
+.ribbonText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -109,24 +108,7 @@ body {
     text-decoration: none;
 }
 
-#photo {
-    margin-top: 35px;
-    position: relative;
-    text-align: center;
-    color: #404040ff;
-    font-family: Sofia;
-    font-size: 22px;
-}
-
-#flower1 {
-    width: 220px;
-    height: 220px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#rubanphoto {
+.ribbonPhoto {
     width: 286px;
     position: absolute;
     top: 51%;
@@ -134,7 +116,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#flowertext {
+.flowerNbr {
     font-family: Blanch;
     font-size: 30px;
     position: absolute;
@@ -159,7 +141,7 @@ body {
     margin-left: auto;
 }
 
-.carte-inter {
+.carteIn {
     position: relative;
     width: 100%;
     height: 100%;
@@ -168,11 +150,11 @@ body {
     transform-style: preserve-3d;
 }
 
-.carte:hover .carte-inter {
+.carte:hover .carteIn {
     transform: rotateY(180deg);
 }
 
-.carte-dev, .carte-der {
+.carteDev, .carteDer {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -181,7 +163,7 @@ body {
     background-color: #262626ff;
 }
 
-.carte-der {
+.carteDer {
     background-color: #262626ff;
     color: #404040ff;
     transform: rotateY(180deg);
@@ -199,23 +181,23 @@ body {
 	line-height: 0px;
 }
 
-.liltexteleg {
+.lilLeg {
 	font-size: 8px;
 }
 
-#datelegende {
+.dateLeg {
 	font-family: Blanch;
 	font-size: 18px;
 }
 
-#moreinfos {
+.moreInfos {
 	line-height: 1px;
 }
 
-.nomscientleg {
+.nomScientLeg {
 	line-height: 80%;
 }
 
-.nomleg {
+.nomLeg {
 	line-height: 100%;
 }
