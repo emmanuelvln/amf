@@ -57,6 +57,22 @@ body {
     margin-bottom: 35px;
 }
 
+#tohomepage {
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+#tohomepageclick {
+    height: 35px;
+    width: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #ruban1img {
     display: block;
     margin-top: 35px;

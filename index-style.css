@@ -65,7 +65,7 @@ body {
     height: 35px;
 }
 
-#tosearchpage {
+#lilbutton {
     height: 35px;
     display: block;
     margin-left: auto;
@@ -73,7 +73,7 @@ body {
     margin-top: 35px;
 }
 
-#tosearchpageclick {
+#lilbuttonclick {
     height: 35px;
     width: 35px;
     display: block;
