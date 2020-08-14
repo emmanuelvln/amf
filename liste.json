@@ -600,5 +600,12 @@
         "nom" : "Compagnon blanc",
         "lieu" : "Saint-Rémy-de-Provence",
         "date" : "11/08/2020"
+    },
+    {
+        "numero": 87,
+        "nomscient": "Plumbago auriculata",
+        "nom" : "Dentelaire du Cap",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "14/08/2020"
     }
 ]
