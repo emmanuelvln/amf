@@ -607,5 +607,12 @@
         "nom" : "Dentelaire du Cap",
         "lieu" : "Saint-Rémy-de-Provence",
         "date" : "14/08/2020"
+    },
+    {
+        "numero": 88,
+        "nomscient": "Epilobium angustifolium",
+        "nom" : "Épilobe à feuilles étroites",
+        "lieu" : "Orcières",
+        "date" : "28/07/2019"
     }
 ]
