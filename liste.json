@@ -614,5 +614,47 @@
         "nom" : "Épilobe à feuilles étroites",
         "lieu" : "Orcières",
         "date" : "28/07/2019"
+    },
+    {
+        "numero": 89,
+        "nomscient": "Cichorium intybus",
+        "nom" : "Chichorée amère",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "17/08/2020"
+    },
+    {
+        "numero": 90,
+        "nomscient": "Cirisium vulgare",
+        "nom" : "Cirse à feuilles lancéolées",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "17/08/2020"
+    },
+    {
+        "numero": 91,
+        "nomscient": "Mentha suaveolens",
+        "nom" : "Menthe à feuilles rondes",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "17/08/2020"
+    },
+    {
+        "numero": 92,
+        "nomscient": "Oxalis articulata",
+        "nom" : "Oxalide articulée",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "17/08/2020"
+    },
+    {
+        "numero": 93,
+        "nomscient": "Oxalis articulata",
+        "nom" : "Oxalide articulée",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "17/08/2020"
+    },
+    {
+        "numero": 94,
+        "nomscient": "Hibiscus syriacus",
+        "nom" : "Hibiscus",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "17/08/2020"
     }
 ]
