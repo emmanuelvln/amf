@@ -41,7 +41,12 @@
 	    }
 
 	    function makeItSmile() {
-		    document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>:)</span>";
+	  		document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>:)</span>";
+	  		document.getElementById("ribbonBot").innerHTML = "<img class='ribbonImg' src='imgs/ruban1.png'><div class='ribbonText' id='ribbonText' onclick='makeItGrin();'>that\'s all folks!</div>";
+		}
+
+		function makeItGrin() {
+	  		document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>:D</span>";
 		}
 
 	    function makeItSad() {
@@ -77,7 +82,7 @@
 
 	<div id="ribbonBot">
 	    <img class="ribbonImg" src="imgs/ruban1.png">
-	    <div class="ribbonText" onclick="makeItSmile();">that's all folks!</div>
+	    <div class="ribbonText" id="ribbonText" onclick="makeItSmile();">that's all folks!</div>
 	</div>
 	
 </body>
