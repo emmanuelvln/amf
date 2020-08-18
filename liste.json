@@ -656,5 +656,12 @@
         "nom" : "Hibiscus",
         "lieu" : "Saint-Rémy-de-Provence",
         "date" : "17/08/2020"
+    },
+    {
+        "numero": 95,
+        "nomscient": "Heliotropium europaeum",
+        "nom" : "Héliotrope commun",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "18/08/2020"
     }
 ]
