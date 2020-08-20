@@ -40,7 +40,8 @@
 			var na = 0;
 			var identified = 0;
 			var lieux = ["Saint-Rémy-de-Provence"];
-			var nbrLieux = 0;
+			var nbrLieux = 1;
+			var osef = 0;
 
 			for (i = 0; i < data.length; i++) {
 				if (data[i].nomscient == "n / a") {
@@ -50,8 +51,24 @@
 				}
 			}
 
+			for (i = 0; i < data.length; i++) {
+				for (j = 0; j < lieux.length; j++) {
+					if (lieux[j] == data[i].lieu) {
+					} else {
+						osef = osef + 1;
+					}
+				}
+				if (osef == lieux.length) {
+					lieux.push(data[i].lieu);
+					nbrLieux++;
+					console.log(lieux);
+				}
+				osef = 0;
+			}
+
 			document.getElementById("card3").innerHTML = na;
 			document.getElementById("card4").innerHTML = identified;
+			document.getElementById("card6").innerHTML = nbrLieux;
 		}
 
 		var appendContentBis=function(){
@@ -109,7 +126,7 @@
 			<p class="sous-titre">photographies sans fleurs</p>
 		</div>
 		<div class="card">
-			<p class="titre" id="card6">3</p>
+			<p class="titre" id="card6">0</p>
 			<p class="sous-titre">lieux d'origine des photos</p>
 		</div>
 
