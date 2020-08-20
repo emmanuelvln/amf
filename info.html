@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/imgs/favicon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="info-style.css">
+
+	<title>always more flowers</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			appendContent();
+			appendContentBis();
+		});
+		
+		var appendContent=function(){
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+		            appendData(data);
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+		};
+
+		function appendData(data) {
+
+			document.getElementById("card2").innerHTML = (data.length);
+
+			var na = 0;
+			var identified = 0;
+			var lieux = ["Saint-Rémy-de-Provence"];
+			var nbrLieux = 0;
+
+			for (i = 0; i < data.length; i++) {
+				if (data[i].nomscient == "n / a") {
+					na = na+1;
+				} else {
+					identified = identified+1;
+				}
+			}
+
+			document.getElementById("card3").innerHTML = na;
+			document.getElementById("card4").innerHTML = identified;
+		}
+
+		var appendContentBis=function(){
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste-lessflowers.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+		            appendDataBis(data);
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+		};
+
+		function appendDataBis(data) {
+			document.getElementById("card5").innerHTML = data.length;
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<div id="header">always more flowers</div>
+
+	<div id="ribbonTop">
+	    <img class="ribbonImg" src="imgs/ruban1.png">
+	    <a class="ribbonText">I want more flowers!</a>
+	</div>
+
+	<div id="homeButton">
+		<a href="index.html"><img id="homeButtonImg" src="imgs/homebutton.png"></a>
+	</div>
+	
+	<div class="basic-grid">
+		<div class="card">
+			<p class="titre" id="card1">0</p>
+			<p class="sous-titre">site web fonctionnel</p>
+		</div>
+		<div class="card">
+			<p class="titre" id="card2">0</p>
+			<p class="sous-titre">photographies de fleurs</p>
+		</div>
+		<div class="card">
+			<p class="titre" id="card3">0</p>
+			<p class="sous-titre">fleurs non identifiées</p>
+		</div>
+		<div class="card">
+			<p class="titre" id="card4">0</p>
+			<p class="sous-titre">espèces de fleurs identifiées</p>
+		</div>
+		<div class="card">
+			<p class="titre" id="card5">0</p>
+			<p class="sous-titre">photographies sans fleurs</p>
+		</div>
+		<div class="card">
+			<p class="titre" id="card6">3</p>
+			<p class="sous-titre">lieux d'origine des photos</p>
+		</div>
+
+	</div>
+
+</html>
