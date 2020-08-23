@@ -206,14 +206,14 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 302px;
+    width: 391px;
 }
 
-#button1, #button2, #button3, #button4 {
+#button1, #button2, #button3, #button4, #button5 {
     display: inline-block;
 }
 
-#button1, #button2, #button3 {
+#button1, #button2, #button3, #button4 {
     padding-right: 50px;
 }
 
@@ -223,8 +223,26 @@ body {
     padding-right: 35px;
 
     display: grid;
-    grid-gap: 76px;
+    grid-gap: 75px;
 
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-auto-rows: 180px;
+}
+
+#goTopButton {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+#goTopButtonImg {
+    height: 50px;
+}
+
+.evenMoreInfos {
+    text-decoration: none;
+    color: #404040ff;
+    cursor: pointer;
 }

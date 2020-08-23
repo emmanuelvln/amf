@@ -33,10 +33,9 @@
 		};
 
 		function appendData(data) {
-			console.log(data.length)
+			Xdata = data;
 			for (i = 0; i < data.length; i++) {
-				console.log("hi" + i);
-				$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div></div></div></div>");
+				$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'><a onclick='flowerProfile("+i+")' class='evenMoreInfos'>En savoir plus</a></div></div></div></div>");
 			} 
 	    }
 
@@ -51,6 +50,33 @@
 
 	    function makeItSad() {
 		    document.getElementById("header").innerHTML = "always more flowers";
+		}
+
+		function goTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+			$('#goTopButton').fadeOut();
+			windowScroll = false;
+		}
+
+		var windowScroll = false;
+		$(window).scroll(function(){
+			if (!windowScroll) {
+				if($(window).scrollTop()>=500){
+					$('#goTopButton').fadeIn();
+					windowScroll = true;
+				}
+			} else {
+				if($(window).scrollTop()<=500){
+					$('#goTopButton').fadeOut();
+					windowScroll = false;
+				}
+			}
+		});
+
+		function flowerProfile(string) {
+			sessionStorage.setItem('flower', string);
+			location.href = 'flowerprofile.html';
 		}
 
 	</script>
@@ -81,8 +107,16 @@
 		<div class="lilButton" id="button4">
 			<a href="info.html"><img class="lilButtonImg" src="imgs/infobutton.png"></a>
 		</div>
+
+		<div class="lilButton" id="button5">
+			<a href="#"><img class="lilButtonImg" src="imgs/leafbutton.png"></a>
+		</div>
 	</div>
-	
+
+	<div id="goTopButton">
+		<a onclick="goTop()"><img id="goTopButtonImg" src="imgs/gotopbutton7 1.png"></a>
+	</div>
+
 	<div class="basic-grid" id="content">
 	</div>
 
