@@ -48,6 +48,14 @@
 		    document.getElementById("header").innerHTML = "no <strike>always</strike> more flowers";
 		}
 
+		function slideUp(string) {
+			document.getElementById(string).style.animation = "slide 0.6s linear";
+		}
+
+		function slideDown(string) {
+			document.getElementById(string).style.animation = "slide2 0.6s linear";
+		}
+
 	</script>
 </head>
 
@@ -60,8 +68,13 @@
 	    <a class="ribbonText">I want no more flowers!</a>
 	</div>
 
-	<div id="homeButton">
-		<a href="index.html"><img id="homeButtonImg" src="imgs/homebutton.png"></a>
+	<div id="menu">
+		<div id="home-button" onmouseover="slideUp('home-slider1')" onmouseout="slideDown('home-slider1')">
+			<a href="index.html">
+				<div id="home-slider1"><img class="menu-button-img" src="imgs/thomebutton.png"></div>
+				<div id="home-slider2"><img class="menu-button-img" src="imgs/thomebutton.png"></div>
+			</a>
+		</div>
 	</div>
 
 	<div class="basic-grid" id="content">

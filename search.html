@@ -81,7 +81,15 @@
 		}
 
 		function addCard(data) {
-			$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div></div></div></div>");
+			$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'><a onclick='flowerProfile("+i+")' class='evenMoreInfos'>En savoir plus</a></div></div></div></div>");
+		}
+
+		function slideUp(string) {
+			document.getElementById(string).style.animation = "slide 0.6s linear";
+		}
+
+		function slideDown(string) {
+			document.getElementById(string).style.animation = "slide2 0.6s linear";
 		}
 
 	</script>
@@ -96,10 +104,15 @@
 	    <a id="ribbonText">I want more flowers!</a>
 	</div>
 
-	<div id="homeButton">
-		<a href="index.html"><img id="homeButtonImg" src="imgs/homebutton.png"></a>
+	<div id="menu">
+		<div id="home-button" onmouseover="slideUp('home-slider1')" onmouseout="slideDown('home-slider1')">
+			<a href="index.html">
+				<div id="home-slider1"><img class="menu-button-img" src="imgs/thomebutton.png"></div>
+				<div id="home-slider2"><img class="menu-button-img" src="imgs/thomebutton.png"></div>
+			</a>
+		</div>
 	</div>
-
+	
 	<input type="text" placeholder="which one is the one?" id="searchInput">
 	<img id="searchButton"src="imgs/searchbutton.png" onclick="getInputValue();">
 

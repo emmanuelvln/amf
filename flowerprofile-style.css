@@ -63,6 +63,38 @@ body {
     height: 35px;
 }
 
+#homeButtonImg {
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+#homeButton {
+    height: 35px;
+    width: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lilButtonImg {
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+.lilButton {
+    height: 35px;
+    width: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .ribbonLeg {
     display: block;
     padding-top: 10px;
@@ -186,14 +218,29 @@ body {
 	line-height: 100%;
 }
 
+#menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 302px;
+}
+
+#button1, #button2, #button3, #button4 {
+    display: inline-block;
+}
+
+#button1, #button2, #button3 {
+    padding-right: 50px;
+}
+
 .basic-grid {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
 
     display: grid;
-    grid-gap: 75px;
+    grid-gap: 76px;
 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-auto-rows: 180px;
 }
 
@@ -212,39 +259,32 @@ body {
 .evenMoreInfos {
     text-decoration: none;
     color: #404040ff;
-    cursor: pointer;
 }
 
-#menu {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#search-button, #lflow-button, #insta-button, #info-button, #leaf-button {
-    background-color: white;
-    height: 35px;
-    width: 35px;
-    border-radius: 10px;
+#title {
+    color: white;
+    font-size: 60px;
+    font-family: Blanch;
     text-align: center;
-    overflow: hidden;
+    padding-top: 35px;
 }
 
-.menu-button-img {
-    padding-top: 6px;
-    height: 22px;
+#photoNbr, #flowerNbr {
+    color: white;
+    font-size: 30px;
+    font-family: Blanch;
+    text-align: center;
+    padding-top: 35px;
 }
 
-@keyframes slide {
-  0% {margin-top:0px;}
-  50% {margin-top:-32px;}
-  100% {margin-top:-32px;}
+#flowerNbr {
+    font-size: 40px;
 }
-@keyframes slide2 {
-  0% {margin-top:-35px;}
-  50% {margin-top:0px;}
-  100% {margin-top:0px;}
+
+#originAndDate {
+    color: white;
+    font-size: 40px;
+    font-family: Blanch;
+    text-align: center;
+    padding-top: 110px;
 }

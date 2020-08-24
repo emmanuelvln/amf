@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/imgs/favicon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="flowerprofile-style.css">
+
+	<title>always more flowers</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			appendContent();
+		});
+
+		var appendContent=function(){
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+		            appendData(data);
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+		};
+			
+		function appendData(data) {
+			var flower = sessionStorage.getItem('flower');
+
+			document.getElementById("title").innerHTML = data[flower].nom + " (" + data[flower].nomscient + ")";
+			document.getElementById("flowerNbr").innerHTML = "Numéro : " + data[flower].numero;
+
+			if (data[flower].version > 1) {
+				//document.getElementById("originAndDate").innerHTML = "Origine d'une des photographies : " + data[flower].lieu + "<br>Date d'une des prises en photo : " + data[flower].date;
+				document.getElementById("photoNbr").innerHTML = data[flower].version + " photographies disponibles";	
+			} else {
+				//document.getElementById("originAndDate").innerHTML = "Origine de la photographie : " + data[flower].lieu + "<br>Date de la prise en photo : " + data[flower].date;
+				document.getElementById("photoNbr").innerHTML = data[flower].version + " photographie disponible";
+			}
+
+			var flowerName = data[flower].nomscient;
+			var photoNbr = data[flower].version;
+
+			$('#photo').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower" + data[flower].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[flower].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[flower].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[flower].date + "</span></p><p><span class='lilLeg'>à </span>" + data[flower].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'></div></div></div>");
+
+			if (photoNbr > 1) {
+				var n = 2
+				for (i = 0; i < (photoNbr-1); i++) {
+					$('#photo').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower" + data[flower].numero + "_" + n + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[flower].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[flower].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[flower].date + "</span></p><p><span class='lilLeg'>à </span>" + data[flower].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'></div></div></div>");
+					n++;
+				}	
+			}
+
+
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<div id="header">always more flowers</div>
+
+	<div id="ribbonTop">
+	    <img class="ribbonImg" src="imgs/ruban1.png">
+	    <a class="ribbonText">I want more flowers!</a>
+	</div>
+
+	<div id="homeButton">
+		<a href="index.html"><img id="homeButtonImg" src="imgs/homebutton.png"></a>
+	</div>
+
+	<div id="content">
+		<div id="title">Fleur (Nom scientifique)</div>
+		<div id="flowerNbr">Numéro : 0</div>
+		<div id="photoNbr">0 photographies disponibles</div>
+		<div class="basic-grid" id="photo"></div>
+
+		<!--
+		<div class="bottomInfos" id="originAndDate">Origine de la photographie : Paris<br>Date de la prise en photo : 00/00/0000</div>
+		-->
+	</div>
+	
+</body>
+
+</html>

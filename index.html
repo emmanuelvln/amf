@@ -79,6 +79,22 @@
 			location.href = 'flowerprofile.html';
 		}
 
+		function slideUp(string) {
+			document.getElementById(string).style.animation = "slide 0.6s linear";
+		}
+
+		function slideDown(string) {
+			document.getElementById(string).style.animation = "slide2 0.6s linear";
+		}
+
+		function goTopShade() {
+			document.getElementById("goTopButton").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='goTopButtonImg' src='imgs/gotopbutton2.png'></a>";
+		}
+
+		function goTopUnshade() {
+			document.getElementById("goTopButton").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='goTopButtonImg' src='imgs/gotopbutton1.png'></a>";
+		}
+
 	</script>
 </head>
 
@@ -92,29 +108,44 @@
 	</div>
 
 	<div id="menu">
-		<div class="lilButton" id="button1">
-			<a href="search.html"><img class="lilButtonImg" src="imgs/tosearchpage.png"></a>
+		<div id="search-button" onmouseover="slideUp('search-slider1')" onmouseout="slideDown('search-slider1')">
+			<a href="search.html">
+				<div id="search-slider1"><img class="menu-button-img" src="imgs/tsearchbutton.png"></div>
+				<div id="search-slider2"><img class="menu-button-img" src="imgs/tsearchbutton.png"></div>
+			</a>
 		</div>
 
-		<div class="lilButton" id="button2">
-			<a href="lessflowers.html"><img class="lilButtonImg" src="imgs/photosbutton.png"></a>
+		<div id="lflow-button" onmouseover="slideUp('lflow-slider1')" onmouseout="slideDown('lflow-slider1')">
+			<a href="lessflowers.html">
+				<div id="lflow-slider1"><img class="menu-button-img" src="imgs/tlflowbutton.png"></div>
+				<div id="lflow-slider2"><img class="menu-button-img" src="imgs/tlflowbutton.png"></div>
+			</a>
 		</div>
 
-		<div class="lilButton" id="button3">
-			<a target="_blank" href="https://www.instagram.com/alwaysmoreflowers/"><img class="lilButtonImg" src="imgs/instabutton.png"></a>
+		<div id="insta-button" onmouseover="slideUp('insta-slider1')" onmouseout="slideDown('insta-slider1')">
+			<a target="_blank" href="https://www.instagram.com/alwaysmoreflowers/">
+				<div id="insta-slider1"><img class="menu-button-img" src="imgs/tinstabutton.png"></div>
+				<div id="insta-slider2"><img class="menu-button-img" src="imgs/tinstabutton.png"></div>
+			</a>
 		</div>
 
-		<div class="lilButton" id="button4">
-			<a href="info.html"><img class="lilButtonImg" src="imgs/infobutton.png"></a>
+		<div id="info-button" onmouseover="slideUp('info-slider1')" onmouseout="slideDown('info-slider1')">
+			<a href="info.html">
+				<div id="info-slider1"><img class="menu-button-img" src="imgs/tinfobutton.png"></div>
+				<div id="info-slider2"><img class="menu-button-img" src="imgs/tinfobutton.png"></div>
+			</a>
 		</div>
 
-		<div class="lilButton" id="button5">
-			<a href="#"><img class="lilButtonImg" src="imgs/leafbutton.png"></a>
+		<div id="leaf-button" onmouseover="slideUp('leaf-slider1')" onmouseout="slideDown('leaf-slider1')">
+			<a href="#">
+				<div id="leaf-slider1"><img class="menu-button-img" src="imgs/tleafbutton.png"></div>
+				<div id="leaf-slider2"><img class="menu-button-img" src="imgs/tleafbutton.png"></div>
+			</a>
 		</div>
 	</div>
 
 	<div id="goTopButton">
-		<a onclick="goTop()"><img id="goTopButtonImg" src="imgs/gotopbutton7 1.png"></a>
+		<a onmouseover="goTopShade()" onmouseout="goTopUnshade()" onclick="goTop()"><img id="goTopButtonImg" src="imgs/gotopbutton1.png"></a>
 	</div>
 
 	<div class="basic-grid" id="content">
