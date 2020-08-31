@@ -46,6 +46,11 @@
 			$('#button-block').append("<button id='button2'>Réponse 2</button>");
 			$('#button-block').append("<button id='button3'>Réponse 3</button>");
 
+			if ($(window).width() < 650) {
+				document.getElementById("button-block").style.flexDirection = "column";
+				document.getElementById("button-block").style.height = "200px";
+			}
+
 			setUpGame();
 		}
 
