@@ -47,6 +47,8 @@
 			$('#button-block').append("<button id='button3'>Réponse 3</button>");
 
 			if ($(window).width() < 650) {
+				document.getElementById("button-block").style.width = $(window).width() + "px";
+				console.log($(window).width())
 				document.getElementById("button-block").style.flexDirection = "column";
 				document.getElementById("button-block").style.height = "200px";
 			}
