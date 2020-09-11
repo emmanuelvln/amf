@@ -94,8 +94,6 @@
 
 		function answer(result) {
 			if (result) {
-				console.log("Plus un point pour Griffondor !");
-
 				var points = sessionStorage.getItem('points');
 				points++;
 				sessionStorage.setItem('points', points);
@@ -104,11 +102,48 @@
 
 				setUpGame();
 			} else {
-				console.log("Plus un point pour Poufsouffle !");
-				document.getElementById("announcer").innerHTML = "<div id='announcer'>Vous avez perdu, retentez votre chance !</div>";
+				deathScreen()
 				sessionStorage.setItem('points', 0);
-				setUpGame();
 			}
+		}
+
+		function surrender() {
+			document.location.href = "index.html";
+		}
+		
+		function goOn() {
+			document.getElementById("content").innerHTML = "";
+			document.getElementById("button-block").innerHTML = "";
+
+			if ($(window).width() < 650) {
+				document.getElementById("button-block").style.width = $(window).width() + "px";
+				console.log($(window).width())
+				document.getElementById("button-block").style.flexDirection = "column";
+				document.getElementById("button-block").style.height = "200px";
+			} else {
+				document.getElementById("button-block").style.width = "600px";
+			}
+			
+			$('#content').append("<div id='announcer'>Let the game begin!</div>");
+			$('#content').append("<div id='carte' class='carte'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower1.png' style='width: 220px; height: 220px;'></div>");
+			$('#content').append("<div id='question'>Quelle est cette fleur ?</div>");
+			$('#button-block').append("<button id='button1'>Réponse 1</button>");
+			$('#button-block').append("<button id='button2'>Réponse 2</button>");
+			$('#button-block').append("<button id='button3'>Réponse 3</button>");
+
+			setUpGame();
+		}
+
+		function deathScreen() {
+			document.getElementById("content").innerHTML = "";
+			document.getElementById("button-block").innerHTML = "";
+
+			$('#content').append("<div id='question'>Vous avez perdu ! :'(<br>Voulez-vous recommencer ?</div>");
+			$('#button-block').append("<button id='go-on' onclick='goOn()'>Bien sûr !</button>");
+			$('#button-block').append("<button id='surrender' onclick='surrender()'>Abandonner</button>");
+
+			document.getElementById("button-block").style.width = "300px";
+
 		}
 
 		function slideUp(string) {

@@ -18,6 +18,11 @@
     src: url('fonts/KaushanScript.otf');
 }
 
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('fonts/ConfigCondensed.otf');
+}
+
 body {
     margin-top: 0;
     margin-bottom: 0;
@@ -294,7 +299,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    font-family: ConfigCondensed;
 }
 
 #button1, #button2, #button3 {
@@ -306,5 +311,21 @@ html {
     font-family: Sofia;
     width: 180px;
     height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: ConfigCondensed;
+}
+
+#go-on, #surrender {
+    color: #404040ff;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: Sofia;
+    height: 30px;
     font-size: 18px;
-} 
+    text-align: center;
+    font-family: ConfigCondensed;
+    cursor: pointer;
+}
