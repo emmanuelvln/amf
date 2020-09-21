@@ -17,13 +17,6 @@
 
 		$(document).ready(function(){
 			appendContent();
-			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-			// true for mobile device
-				document.getElementById("header").innerHTML = "mobile";
-			} else {
-			// false for not mobile device
-				document.getElementById("header").innerHTML = "not mobile";
-			}
 		});
 
 		var appendContent=function(){
@@ -40,14 +33,14 @@
 		};
 
 		function appendData(data) {
-			Xdata = data;
 			for (i = 0; i < data.length; i++) {
 				$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'><a onclick='flowerProfile("+i+")' class='evenMoreInfos'>En savoir plus</a></div></div></div></div>");
 			}
-			if ($(window).width() < 450) {
-				document.getElementById('menu').style.width = '300px';
+				if ($(window).width() < 450) {
+					document.getElementById('menu').style.width = '300px';
 			}
-	    }
+		}
+
 
 	    function makeItSmile() {
 	  		document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>:)</span>";
