@@ -1,0 +1,830 @@
+[
+    {
+        "title": "Subnautica",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Super Meat Boy",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "What Remains of Edith Finch",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Jackbox Party Pack",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Axiom Verge",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Thimbleweed Park",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Slime Rancher",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Oxenfree",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Witness",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Transistor",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "World of Goo",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Sotires Untold",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "RiME",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "City of Brass",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Kingdom New Lands",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Enter the Gungeon",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Rebel Galaxy",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Last Day of June",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Overcooked!",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Torchlight",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "LIMBO",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Moonlighter",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "For Honor",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Alan Wake",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "This War of Mine",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "GNOG",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Hyper Light Drifer",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Mutant Year Zero: Road to Eden",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Fez",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Celeste",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Inside",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The End is Nigh and Abzu",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Conarium",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Batman Arkham Collection",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Lego Batman Trilogy",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Everything",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Metro 2033: Redux",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Surviving Mars",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Observer",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Alan Wakes's American Nightmare",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Layers of Fear",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Q.U.B.E. 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "SOMA",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Costume Quest",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Nuclear Throne",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Ruiner",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Messenger",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Bad North",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Rayman Legends",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Jotun: Valhalla Edition",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Escapists",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Wolf Among Us",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Into the Breach",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "TowerFall Ascension",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Superhot",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Little Inferno",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Ape Out",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Totally Accurate Battle Simulator",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Faster Than Light",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Hyper Light Drifter",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Shadow Tactics: Blades of the Shogun",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Talos Principle",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Hello Neighbor",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Yooka-Laylee and the Impossible Lair",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Steep",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Darksiders I Warmastered Edition",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Darksiders II Deathinitive Edition",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Sundered Eldritch Edition",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Horace",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Bridge",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Farming Simulator 2019",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Pandemic",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Ticket to Ride",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Carcassone",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Aztez",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Kingdome Come: Deliverance",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Assassin's Creed: Syndicate",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Faeria",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Inner Space",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Offworld Trading Company",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "GoNNER",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "A Short Hike",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Anodyne 2: Return to Dust",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Mutazione",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Watch Dogs",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Stanley Parable",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Tormentor x Punisher",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Figment",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "World War Z",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Hob",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Gone Home",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Drawful",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Sherlock Holmes: Crimes and Punishments",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Close to the Sun",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Wheels of Aurelia",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Just Cause 4",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "For the King",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Crashlands",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Amnesia: The Dark Descent",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Death Coming",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "GTA V",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Sid Meier's Civilization 6",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Borderlands : The Handsome Collection",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Overcooked",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "ARK: Survival Evolved",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Pathway",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Escapists 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Torchlight 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Stranger Things 3: The Game",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "AER Memories of Old",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Conan Exiles",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Hue",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Killing Floor 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Lifeless Planet",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Tacoma",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Next Up Hero",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Superbrothers: Sword and Sworcery EP",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Barony",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "20XX",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "gametitle",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Wilmot's Warehouse",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "The Alto Collection",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Remnant: From the Ashes",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "God's Trigger",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "HITMAN",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Shadowrun Collection",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Where the Water Tastes Like Wine",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Railway Empire",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Stick It to The Man!",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Watch Dogs 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Football Manager 2020",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Roller Coaster Tycoon 3 Complete Edition",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Pikuniku",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Rising Storm 2: Vietnam",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "ABZU",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Amnesia: A Machine for Pigs",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Layers of Fear 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    },
+    {
+        "title": "Costume Quest 2",
+        "developer": "developername",
+        "publisher" : "publishername",
+        "price" : "pricetag"
+    }
+]
