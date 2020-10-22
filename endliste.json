@@ -814,17 +814,5 @@
         "developer": "developername",
         "publisher" : "publishername",
         "price" : "pricetag"
-    },
-    {
-        "title": "Layers of Fear 2",
-        "developer": "developername",
-        "publisher" : "publishername",
-        "price" : "pricetag"
-    },
-    {
-        "title": "Costume Quest 2",
-        "developer": "developername",
-        "publisher" : "publishername",
-        "price" : "pricetag"
     }
 ]
