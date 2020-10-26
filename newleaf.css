@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Evogria;
+    src: url('fonts/Evogria.otf');
+}
+
+@font-face {
+    font-family: Sofia;
+    src: url('fonts/Sofia.otf');
+}
+
+@font-face {
+    font-family: Blanch;
+    src: url('fonts/Blanch.otf');
+}
+
+@font-face {
+    font-family: KaushanScript;
+    src: url('fonts/KaushanScript.otf');
+}
+
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('fonts/ConfigCondensed.otf');
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #404040ff;
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+#header {
+    background-color: #262626ff;
+    font-family: Sofia;
+    color: white;
+    text-align: center;
+    padding-bottom: 7px;
+    font-size: 50px;
+}
+
+#ribbonTop {
+    position: relative;
+    text-align: center;
+    color: #404040ff;
+    font-family: Sofia;
+    font-size: 22px;
+}
+
+#ribbonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Sofia;
+    color: #404040ff;
+    text-decoration: none;
+}
+
+#ribbonImg {
+    display: block;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 35px;
+}
+
+#homeButtonImg {
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+#homeButton {
+    height: 35px;
+    width: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#menu {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+#home-button {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu-button-img {
+    padding-top: 6px;
+    height: 22px;
+}
+
+@keyframes slide {
+  0% {margin-top:0px;}
+  50% {margin-top:-32px;}
+  100% {margin-top:-32px;}
+}
+@keyframes slide2 {
+  0% {margin-top:-35px;}
+  50% {margin-top:0px;}
+  100% {margin-top:0px;}
+}
+
+/* QUIZZ CSS */
+
+#thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+#title {
+    display: block;
+    font-family: Blanch;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.subtitle {
+    font-family: ConfigCondensed;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+}
+
+#start-button {
+    position: relative;
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 150ms;
+}
+
+#start-button:hover {
+    background-color: #404040ff;
+    border: solid white 1px;
+}
+
+#start-button::before {
+    content: '';
+    position: absolute;
+    height: 44px;
+    width: 192px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#button1:hover, #button2:hover, #button3:hover {
+    background-color: #404040ff;
+    border: solid white 1px;
+}
+
+#button1::before, #button2::before, #button3::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    width: 492px;
+    height: 32px;
+    z-index: 2;
+}
+
+#start-button span {
+    font-family: ConfigCondensed;
+    color: #262626ff;
+    font-size: 27px;
+    z-index: 2;
+}
+
+#photo {
+    height: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+#button1, #button2, #button3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 35px;
+    border: none;
+    height: 40px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 150ms;
+}
+
+#button1 span, #button2 span, #button3 span {
+    color: #262626ff;
+    font-family: ConfigCondensed;
+    font-size: 17px;
+    z-index: 2;
+}
