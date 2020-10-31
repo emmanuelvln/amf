@@ -33,6 +33,7 @@ body {
 
 html {
     scrollbar-width: thin;
+    background-color: #404040ff;
 }
 
 #header {
