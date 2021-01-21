@@ -5,7 +5,11 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="European Travel Destinations">
+	<meta property="og:description" content="Offering tour packages for individuals or groups.">
+	<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+	<meta property="og:url" content="http://euro-travel-example.com/index.htm">
 	<link rel="icon" href="https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/imgs/favicon.png" type="image/icon type">
 	<link rel="stylesheet" type="text/css" href="index-style.css">
 
@@ -34,7 +38,7 @@
 
 		function appendData(data) {
 			for (i = 0; i < data.length; i++) {
-				$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Flower " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'><a onclick='flowerProfile("+i+")' class='evenMoreInfos'>En savoir plus</a></div></div></div></div>");
+				$('#content').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'>Fleur " + data[i].numero + "</div><img src='photos/flower" + data[i].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[i].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[i].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[i].date + "</span></p><p><span class='lilLeg'>à </span>" + data[i].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'><div class='flowerNbr'><a onclick='flowerProfile("+i+")' class='evenMoreInfos'>En savoir plus</a></div></div></div></div>");
 			}
 				if ($(window).width() < 450) {
 					document.getElementById('menu').style.width = '300px';
