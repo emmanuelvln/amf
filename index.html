@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/imgs/favicon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="index2-style.css">
+
+	<title>always more flowers</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			appendContent();
+		});
+
+		var appendContent=function(){
+		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
+		        .then(function (response) {
+		            return response.json();
+		        })
+		        .then(function (data) {
+		            appendData(data);
+		        })
+		        .catch(function (err) {
+		            console.log('error: ' + err);
+		        });
+		};
+
+		function appendData(data) {
+			for (i = 0; i < data.length; i++) {
+				if(data[i].nom.length > 19) {
+					data[i].nom = data[i].nom.slice(0, 17)+"..."
+				}
+				$('#content').append("<div class='tiles'><div class='tile'><div class='frame'><img class='photo' src='photos/flower"+data[i].numero+".png'></div><span class='title'>" + data[i].nom + "</span><span class='details'>" + data[i].nomscient + "</span></div></div>");
+			}
+				if ($(window).width() < 450) {
+					document.getElementById('menu').style.width = '300px';
+			}
+		}
+
+
+	    function makeItSmile() {
+	  		document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>:)</span>";
+	  		document.getElementById("ribbonBot").innerHTML = "<img class='ribbonImg' src='imgs/ruban1.png'><div class='ribbonText' id='ribbonText' onclick='makeItGrin();'>that\'s all folks!</div>";
+		}
+
+		function makeItGrin() {
+	  		document.getElementById("header").innerHTML = "always more flowers <span onclick='makeItSad();'>(つ✧ω✧)つ</span>";
+		}
+
+	    function makeItSad() {
+		    document.getElementById("header").innerHTML = "always more flowers";
+		}
+
+		function goTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+			$('#goTopButton').fadeOut();
+			windowScroll = false;
+		}
+
+		var windowScroll = false;
+		$(window).scroll(function(){
+			if (!windowScroll) {
+				if($(window).scrollTop()>=500){
+					$('#goTopButton').fadeIn();
+					windowScroll = true;
+				}
+			} else {
+				if($(window).scrollTop()<=500){
+					$('#goTopButton').fadeOut();
+					windowScroll = false;
+				}
+			}
+		});
+
+		function flowerProfile(string) {
+			sessionStorage.setItem('flower', string);
+			location.href = 'flowerprofile.html';
+		}
+
+		function slideUp(string) {
+			document.getElementById(string).style.animation = "slide 0.6s linear";
+		}
+
+		function slideDown(string) {
+			document.getElementById(string).style.animation = "slide2 0.6s linear";
+		}
+
+		function goTopShade() {
+			document.getElementById("goTopButton").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='goTopButtonImg' src='imgs/gotopbutton2.png'></a>";
+		}
+
+		function goTopUnshade() {
+			document.getElementById("goTopButton").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='goTopButtonImg' src='imgs/gotopbutton1.png'></a>";
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<!-- HEADER ALWAYS MORE FLOWERS -->
+
+	<div id="header">always more flowers</div>
+
+	<!-- TOP RIBBON -->
+
+	<div id="ribbonTop"> 
+	    <img class="ribbonImg" src="imgs/ruban1.png">
+	    <a class="ribbonText">I want more flowers!</a>
+	</div>
+
+	<!-- NAVIGATION MENU -->
+
+	<div id="menu">
+		<div id="search-button" onmouseover="slideUp('search-slider1')" onmouseout="slideDown('search-slider1')">
+			<a href="search.html">
+				<div id="search-slider1"><img class="menu-button-img" src="imgs/tsearchbutton.png"></div>
+				<div id="search-slider2"><img class="menu-button-img" src="imgs/tsearchbutton.png"></div>
+			</a>
+		</div>
+
+		<div id="lflow-button" onmouseover="slideUp('lflow-slider1')" onmouseout="slideDown('lflow-slider1')">
+			<a href="lessflowers.html">
+				<div id="lflow-slider1"><img class="menu-button-img" src="imgs/tlflowbutton.png"></div>
+				<div id="lflow-slider2"><img class="menu-button-img" src="imgs/tlflowbutton.png"></div>
+			</a>
+		</div>
+	<!--
+		<div id="insta-button" onmouseover="slideUp('insta-slider1')" onmouseout="slideDown('insta-slider1')">
+			<a target="_blank" href="https://www.instagram.com/alwaysmoreflowers/">
+				<div id="insta-slider1"><img class="menu-button-img" src="imgs/tinstabutton.png"></div>
+				<div id="insta-slider2"><img class="menu-button-img" src="imgs/tinstabutton.png"></div>
+			</a>
+		</div>
+	-->
+
+		<div id="info-button" onmouseover="slideUp('info-slider1')" onmouseout="slideDown('info-slider1')">
+			<a href="info.html">
+				<div id="info-slider1"><img class="menu-button-img" src="imgs/tinfobutton.png"></div>
+				<div id="info-slider2"><img class="menu-button-img" src="imgs/tinfobutton.png"></div>
+			</a>
+		</div>
+
+		<div id="leaf-button" onmouseover="slideUp('leaf-slider1')" onmouseout="slideDown('leaf-slider1')">
+			<a href="newleaf.html">
+				<div id="leaf-slider1"><img class="menu-button-img" src="imgs/tleafbutton.png"></div>
+				<div id="leaf-slider2"><img class="menu-button-img" src="imgs/tleafbutton.png"></div>
+			</a>
+		</div>
+	</div>
+
+	<!-- GO TOP BUTTON -->
+
+	<div id="goTopButton">
+		<a onmouseover="goTopShade()" onmouseout="goTopUnshade()" onclick="goTop()"><img id="goTopButtonImg" src="imgs/gotopbutton1.png"></a>
+	</div>
+
+	<!-- PHOTOS GRID -->
+
+	<div class="basic-grid" id="content">
+	</div>
+
+	<!-- BOTTOM RIBBON -->
+
+	<div id="ribbonBot">
+		<img class="ribbonImg" src="imgs/ruban1.png">
+	    <div class="ribbonText" id="ribbonText" onclick="makeItSmile();">that's all folks!</div>
+	</div>
+	
+	<div class='tiles'>
+		<div class='tile'>
+			<div class="frame">
+				<img class='photo' src='https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/photos/flower2.png'>
+			</div>
+			<span class='title'>Nigritelle noire</span>
+			<span class='details'>Gymnadenis nigra</span>
+		</div>
+	</div>
+</body>
+
+</html>

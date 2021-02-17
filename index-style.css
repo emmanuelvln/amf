@@ -1,0 +1,351 @@
+@font-face {
+    font-family: Evogria;
+    src: url('fonts/Evogria.otf');
+}
+
+@font-face {
+    font-family: Sofia;
+    src: url('fonts/Sofia.otf');
+}
+
+@font-face {
+    font-family: Blanch;
+    src: url('fonts/Blanch.otf');
+}
+
+@font-face {
+    font-family: KaushanScript;
+    src: url('fonts/KaushanScript.otf');
+}
+
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('fonts/ConfigCondensed.otf');
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #404040ff;
+}
+
+/* HEADER */
+
+#header {
+    background-color: #262626ff;
+    font-family: Sofia;
+    color: white;
+    text-align: center;
+    padding-bottom: 7px;
+    font-size: 50px;
+}
+
+/* TOP AND BOTTOM RIBBONS */
+
+#ribbonTop, #ribbonBot {
+    position: relative;
+    text-align: center;
+    color: #404040ff;
+    font-family: Sofia;
+    font-size: 22px;
+}
+#ribbonBot {
+    margin-bottom: 35px;
+}
+.ribbonImg {
+    display: block;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 35px;
+}
+
+/* CARDS */
+
+#content {
+    margin-bottom: 120px;
+}
+.ribbonLeg {
+    display: block;
+    padding-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 20px;
+}
+.infoLeg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: Blanch;
+    color: #262626ff;
+    text-align: center;
+    font-size: 20px;
+}
+.ribbonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Sofia;
+    color: #404040ff;
+    text-decoration: none;
+}
+.ribbonPhoto {
+    width: 286px;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flowerNbr {
+    font-family: Blanch;
+    font-size: 30px;
+    position: absolute;
+    top: 204px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #404040ff;
+}
+.carte {
+    display: flex;
+    margin-top: 35px;
+    background-color: transparent;
+    width: 220px;
+    height: 220px;
+    perspective: 1000px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carteIn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.carte:hover .carteIn {
+    transform: rotateY(180deg);
+}
+.carteDev, .carteDer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #262626ff;
+}
+.carteDer {
+    background-color: #262626ff;
+    color: #404040ff;
+    transform: rotateY(180deg);
+}
+.legende {
+    text-align: center;
+    font-family: Sofia;
+    font-size: 15px;
+    color: white;
+    line-height: 3px;
+}
+.legende br {
+	line-height: 0px;
+}
+.lilLeg {
+	font-size: 8px;
+}
+.dateLeg {
+	font-family: Blanch;
+	font-size: 18px;
+}
+.moreInfos {
+	line-height: 1px;
+}
+.nomScientLeg {
+	line-height: 80%;
+}
+.nomLeg {
+	line-height: 100%;
+}
+.evenMoreInfos {
+    text-decoration: none;
+    color: #404040ff;
+    cursor: pointer;
+}
+
+/* PHOTOS GRID */
+
+.basic-grid {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    display: grid;
+    grid-gap: 150px 30px;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-auto-rows: 180px;
+}
+
+/* GO TOP BUTTON */
+
+#goTopButton {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+#goTopButtonImg {
+    height: 50px;
+}
+
+/* NAVIGATION MENU */
+
+#menu {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-button, #lflow-button, #insta-button, #info-button, #leaf-button {
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.menu-button-img {
+    padding-top: 6px;
+    height: 22px;
+}
+@keyframes slide {
+  0% {margin-top:0px;}
+  50% {margin-top:-32px;}
+  100% {margin-top:-32px;}
+}
+@keyframes slide2 {
+  0% {margin-top:-35px;}
+  50% {margin-top:0px;}
+  100% {margin-top:0px;}
+}
+
+#polaroid {
+    background-color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    height: 286px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.20);
+}
+
+.polaroid-photo {
+    width: 216px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+#polaroid span {
+    font-family: KaushanScript;
+    color: #404040ff;
+    padding-bottom: 20px;
+    height: 20px;
+}
+
+
+.tiles {
+    width: 248px;
+    height: 300px;
+}
+
+.photo {
+    height: 216px;
+}
+
+.frame {
+    height: 216px;
+    width: 216px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tile {
+    padding-top: 16px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    height: 286px;
+    box-shadow: 2px 2px rgba(0  , 0, 0, 0.20);
+}
+
+.tile::before {
+    opacity: 0%;
+    content: '';
+    background: rgba(255, 255, 255, 0.3);
+    display: block;
+    height: 302px;
+    width: 248px;
+    position: absolute;
+    transition-duration: 200ms;
+    margin-top: 0px;
+}
+
+.tiles:hover .tile::before {
+    opacity: 100%;
+    margin-top: -16px;
+}
+.tiles:hover .photo {
+    height: 220px;
+    transition-duration: 300ms;
+}
+.title {
+    position: absolute;
+    display: block;
+    top: 300px;
+    transition-duration: 200ms;
+    color: white;
+    transition-delay: 0s;
+    font-family: ConfigCondensed;
+    font-size: 29px;
+    padding-left: 20px;
+}
+
+.tile:hover .title {
+    top: 170px;
+}
+
+.details {
+    transition-delay: 0s;
+    position: absolute;
+    display: block;
+    top: 300px;
+    color: white;
+    font-family: ConfigCondensed;
+    font-size: 20px;
+    transition-duration: 200ms;
+    padding-left: 20px;
+}
+
+.tile:hover .details {
+    transition-delay: 100ms;
+    top: 205px;
+}
