@@ -317,6 +317,7 @@ body {
     filter: blur(2px);
     height: 230px;
     transition-duration: 300ms;
+    filter: brightness(0.7);
 }
 .title {
     position: absolute;
