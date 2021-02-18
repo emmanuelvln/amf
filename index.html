@@ -17,7 +17,16 @@
 
 		$(document).ready(function(){
 			appendContent();
+			var test1 = (Math.trunc((window.innerWidth-100)/258))*248+(Math.trunc((window.innerWidth-100)/258)-1)*10;
+			document.getElementById('content').style.width = test1+"px";
 		});
+
+		function resize() {
+			var test1 = (Math.trunc((window.innerWidth-100)/258))*248+(Math.trunc((window.innerWidth-100)/258)-1)*10;
+			document.getElementById('content').style.width = test1+"px";
+		}
+
+		window.onresize = resize;
 
 		var appendContent=function(){
 		    fetch('https://alwaysmoreflowers.github.io/amf/liste.json')
@@ -35,10 +44,10 @@
 		function appendData(data) {
 			for (i = 0; i < data.length; i++) {
 				if(data[i].nom.length > 19) {
-					if(data[i].nom.slice(16, 17) == " ") {
-						data[i].nom = data[i].nom.slice(0, 16)+"..."
+					if(data[i].nom.slice(15, 16) == " ") {
+						data[i].nom = data[i].nom.slice(0, 15)+"..."
 					} else {
-						data[i].nom = data[i].nom.slice(0, 17)+"..."
+						data[i].nom = data[i].nom.slice(0, 16)+"..."
 					}
 				}
 
@@ -191,6 +200,18 @@
 	<div id="ribbonBot">
 		<img class="ribbonImg" src="imgs/ruban1.png">
 	    <div class="ribbonText" id="ribbonText" onclick="makeItSmile();">that's all folks!</div>
+	</div>
+	
+	<div class='tiles'>
+		<div class='tile'>
+			<div class="frame">
+				<img class='photo' src='https://raw.githubusercontent.com/alwaysmoreflowers/amf/master/photos/flower2.png'>
+			</div>
+			<span class='number'>001</span>
+			<img onclick='openPlus("1")' class='plus' src="imgs/plus.png">
+			<span class='title'>Nigritelle noire</span>
+			<span class='details'>Gymnadenis nigra</span>
+		</div>
 	</div>
 </body>
 

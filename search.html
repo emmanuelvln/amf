@@ -15,6 +15,20 @@
 
 	<script type="text/javascript">
 
+		function resize() {
+			var found = sessionStorage.getItem('found');
+			console.log("SSS"+found);
+			if (found*258 > window.innerWidth) {
+				var test1 = (Math.trunc(window.innerWidth/258))*248+((Math.trunc(window.innerWidth/258))-1)*10
+				document.getElementById('content').style.width = test1+"px";
+			} else {
+				var test1 = found*248+(found-1)*10;
+				document.getElementById('content').style.width = test1+"px";
+			}
+		}
+
+		window.onresize = resize;
+
 		$(document).on("keypress", "input", function(e){
 			if(e.which == 13){
 				getInputValue();
@@ -22,7 +36,11 @@
 		});
 
 		function getInputValue(){
+			var found = 0
+			sessionStorage.setItem('found', found);
+
 			document.getElementById("content").innerHTML = "";
+			document.getElementById("notfound").innerHTML = "";
 
 			var inputVal = document.getElementById("searchInput").value;
 			console.log(inputVal);
@@ -70,7 +88,8 @@
 					}
 
 					if (found != true) {
-						$('#content').append("	<div id='notFound'>No flower found</div>");
+						document.getElementById("content").innerHTML = "";
+						$('#notfound').append("	<div id='notFound'>No flower found</div>");
 					}
 
 					
@@ -81,6 +100,9 @@
 		}
 
 		function addCard(data) {
+			var found = (parseInt(sessionStorage.getItem('found')))+1;
+			sessionStorage.setItem('found', found);
+
 			if(data[i].nom.length > 19) {
 				if(data[i].nom.slice(15, 16) == " ") {
 					data[i].nom = data[i].nom.slice(0, 15)+"..."
@@ -96,6 +118,7 @@
 				numeroDisplay = "00"+data[i].numero
 			}
 			$('#content').append("<div class='tiles'><div class='tile'><div class='frame'><img class='photo' src='photos/flower"+data[i].numero+".png'></div><span class='number'>"+numeroDisplay+"</span><img onclick='openPlus("+i+")' class='plus' src='imgs/plus.png'><span class='title'>" + data[i].nom + "</span><span class='details'>" + data[i].nomscient + "</span></div></div>");
+			resize();
 		}
 
 		function slideUp(string) {
@@ -135,9 +158,9 @@
 	<input type="text" placeholder="which one is the one?" id="searchInput">
 	<img id="searchButton"src="imgs/searchbutton.png" onclick="getInputValue();">
 
-	<div id='content-container'>
-		<div class="basic-grid" id="content">
-		</div>
+	<div class="basic-grid" id="content">
+	</div>
+	<div id="notfound">
 	</div>
 
 </body>
