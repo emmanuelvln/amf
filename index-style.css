@@ -301,20 +301,20 @@ body {
 .tile::before {
     opacity: 0%;
     content: '';
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     display: block;
     height: 302px;
     width: 248px;
     position: absolute;
     transition-duration: 200ms;
-    margin-top: 0px;
+    margin-top: -16px;
 }
 
 .tiles:hover .tile::before {
     opacity: 100%;
-    margin-top: -16px;
 }
 .tiles:hover .photo {
+    filter: blur(2px);
     height: 230px;
     transition-duration: 300ms;
 }
@@ -332,6 +332,48 @@ body {
 
 .tile:hover .title {
     top: 170px;
+}
+
+.plus {
+    transition-delay: 0s;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 23px;
+    color: white;
+    font-family: ConfigCondensed;
+    font-size: 20px;
+    transition-duration: 250ms;
+    padding-left: 21px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tile:hover .plus {
+    transition-delay: 200ms;
+    opacity: 100;
+    top: 23px;
+}
+
+.number {
+    transition-delay: 0s;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 14px;
+    color: white;
+    font-family: ConfigCondensed;
+    font-size: 20px;
+    transition-duration: 250ms;
+    font-size: 30px;
+    padding-right: 20px;
+    right: 0px;
+}
+
+.tile:hover .number {
+    transition-delay: 200ms;
+    opacity: 100;
+    top: 14px;
 }
 
 .details {
