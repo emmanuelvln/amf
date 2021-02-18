@@ -18,6 +18,11 @@
     src: url('fonts/KaushanScript.otf');
 }
 
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('fonts/ConfigCondensed.otf');
+}
+
 body {
     margin-top: 0;
     margin-bottom: 0;
@@ -234,14 +239,15 @@ html {
 }
 
 .basic-grid {
-    padding-top: 35px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
 
     display: grid;
-    grid-gap: 76px;
+    grid-gap: 150px 15px;
 
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
     grid-auto-rows: 180px;
 }
 
@@ -277,4 +283,159 @@ html {
   0% {margin-top:-35px;}
   50% {margin-top:0px;}
   100% {margin-top:0px;}
+}
+
+
+#polaroid {
+    background-color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    height: 286px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.20);
+}
+
+.polaroid-photo {
+    width: 216px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+#polaroid span {
+    font-family: KaushanScript;
+    color: #404040ff;
+    padding-bottom: 20px;
+    height: 20px;
+}
+
+
+.tiles {
+    width: 248px;
+    height: 300px;
+}
+
+.photo {
+    height: 216px;
+}
+
+.frame {
+    height: 216px;
+    width: 216px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tile {
+    padding-top: 16px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    width: 248px;
+    display: block;
+    text-align: center;
+    height: 286px;
+    box-shadow: 2px 2px rgba(0  , 0, 0, 0.20);
+}
+
+.tile::before {
+    opacity: 0%;
+    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+    height: 302px;
+    width: 248px;
+    position: absolute;
+    transition-duration: 200ms;
+    margin-top: -16px;
+}
+
+.tiles:hover .tile::before {
+    opacity: 100%;
+}
+
+.tiles:hover .photo {
+    height: 230px;
+    transition-duration: 300ms;
+    filter: brightness(0.7)  blur(2px); 
+}
+
+.title {
+    position: absolute;
+    display: block;
+    top: 300px;
+    transition-duration: 200ms;
+    color: white;
+    transition-delay: 0s;
+    font-family: ConfigCondensed;
+    font-size: 29px;
+    padding-left: 20px;
+}
+
+.tile:hover .title {
+    top: 170px;
+}
+
+.plus {
+    transition-delay: 0s;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 23px;
+    color: white;
+    font-family: ConfigCondensed;
+    font-size: 20px;
+    transition-duration: 250ms;
+    padding-left: 21px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tile:hover .plus {
+    transition-delay: 200ms;
+    opacity: 100;
+    top: 23px;
+}
+
+.number {
+    transition-delay: 0s;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 14px;
+    color: white;
+    font-family: ConfigCondensed;
+    font-size: 20px;
+    transition-duration: 250ms;
+    font-size: 30px;
+    padding-right: 20px;
+    right: 0px;
+}
+
+.tile:hover .number {
+    transition-delay: 200ms;
+    opacity: 100;
+    top: 14px;
+}
+
+.details {
+    transition-delay: 0s;
+    position: absolute;
+    display: block;
+    top: 300px;
+    color: white;
+    font-family: ConfigCondensed;
+    font-size: 20px;
+    transition-duration: 200ms;
+    padding-left: 20px;
+}
+
+.tile:hover .details {
+    transition-delay: 100ms;
+    top: 205px;
 }
