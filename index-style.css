@@ -351,12 +351,14 @@ body {
     padding-left: 21px;
     height: 20px;
     cursor: pointer;
+    z-index: -10;
 }
 
 .tile:hover .plus {
     transition-delay: 200ms;
     opacity: 100;
     top: 23px;
+    z-index: 10;
 }
 
 .number {
