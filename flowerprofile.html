@@ -15,6 +15,20 @@
 
 	<script type="text/javascript">
 
+		function resize() {
+			var found = sessionStorage.getItem('found');
+			console.log("SSS"+found);
+			if (found*258 > window.innerWidth) {
+				var test1 = (Math.trunc(window.innerWidth/258))*248+((Math.trunc(window.innerWidth/258))-1)*10
+				document.getElementById('photos').style.width = test1+"px";
+			} else {
+				var test1 = found*248+(found-1)*10;
+				document.getElementById('photos').style.width = test1+"px";
+			}
+		}
+
+		window.onresize = resize;
+		
 		$(document).ready(function(){
 			appendContent();
 		});
@@ -35,8 +49,12 @@
 		function appendData(data) {
 			var flower = sessionStorage.getItem('flower');
 
-			document.getElementById("title").innerHTML = data[flower].nom + " (" + data[flower].nomscient + ")";
-			document.getElementById("flowerNbr").innerHTML = "Numéro : " + data[flower].numero;
+			document.getElementById("title").innerHTML = data[flower].nom;
+			document.getElementById("subtitle").innerHTML = data[flower].nomscient;
+
+			sessionStorage.setItem('found', data[flower].version);
+
+			resize();
 
 			if (data[flower].version > 1) {
 				//document.getElementById("originAndDate").innerHTML = "Origine d'une des photographies : " + data[flower].lieu + "<br>Date d'une des prises en photo : " + data[flower].date;
@@ -51,28 +69,40 @@
 
 			console.log($(window).width());
 			if ($(window).width() < 700) {
-				$('#photo').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower" + data[flower].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[flower].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[flower].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[flower].date + "</span></p><p><span class='lilLeg'>à </span>" + data[flower].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'></div></div></div>");
+				$('#photos').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower" + data[flower].numero + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[flower].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[flower].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[flower].date + "</span></p><p><span class='lilLeg'>à </span>" + data[flower].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'></div></div></div>");
 
 				if (photoNbr > 1) {
 					var n = 2
 					for (i = 0; i < (photoNbr-1); i++) {
-						$('#photo').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower" + data[flower].numero + "_" + n + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[flower].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[flower].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[flower].date + "</span></p><p><span class='lilLeg'>à </span>" + data[flower].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'></div></div></div>");
+						$('#photos').append("<div class='carte'><div class='carteIn'><div class='carteDev'><img class='ribbonPhoto' src='imgs/rubanphoto.png'><img src='photos/flower" + data[flower].numero + "_" + n + ".png' style='width: 220px; height: 220px;'></div><div class='carteDer'><p class='infoLeg'>INFORMATIONS</p><img class='ribbonLeg' src='imgs/rubanlegende.png'><div class='legende'><p class='nomLeg'>" + data[flower].nom + "</p><p>⚭</p><p class='nomScientLeg'>" + data[flower].nomscient + "</p><p>⚭</p><div class='moreInfos'><p class='lilLeg'>le  <span class='dateLeg'>" + data[flower].date + "</span></p><p><span class='lilLeg'>à </span>" + data[flower].lieu + "</p></div></div><img class='ribbonPhoto' src='imgs/rubanphoto.png'></div></div></div>");
 						n++;
 					}	
 				}
 			} else {
-				$('#photo').append("<div class='carteBig'><img class='ribbonPhotoB' src='imgs/bigribbon.png'><img src='photos/flower" + data[flower].numero + ".png' style='width: 700px; height: 700px;'></div>");
+				$('#photos').append("<div class='tiles'><div class='tile'><div class='frame'><img class='photo' src='photos/flower"+data[flower].numero+".png'></div><img onclick='fullscreen("+data[flower].numero+",0)' class='fullscreen' src='imgs/fullscreen.png'></div></div>");
 
 				if (photoNbr > 1) {
 					var n = 2
 					for (i = 0; i < (photoNbr-1); i++) {
-						$('#photo').append("<div class='carteBig'><img class='ribbonPhotoB' src='imgs/bigribbon.png'><img src='photos/flower" + data[flower].numero + "_" + n + ".png' style='width: 700px; height: 700px;'></div>");
+						$('#photos').append("<div class='tiles'><div class='tile'><div class='frame'><img class='photo' src='photos/flower"+data[flower].numero+"_"+n+".png'></div><img onclick='fullscreen("+data[flower].numero+","+n+")' class='fullscreen' src='imgs/fullscreen.png'></div></div>");
 						n++;
 					}	
 				}
 			}
 		}
 
+		function closeIt() {
+			document.getElementById("zoomin").style.display = "none";
+		}
+
+		function fullscreen(numero,n) {
+			if (n > 0) {
+				document.getElementById("zoomin").innerHTML = "<div id='dark-back'></div><div onclick='closeIt()' id='img-container'><img id='zoom-img' src='photos/flower"+numero+"_"+n+".png'></div>";
+			} else {
+				document.getElementById("zoomin").innerHTML = "<div id='dark-back'></div><div onclick='closeIt()' id='img-container'><img id='zoom-img' src='photos/flower"+numero+".png'></div>";
+			}
+			document.getElementById("zoomin").style.display = "block";
+		}
 	</script>
 </head>
 
@@ -117,17 +147,17 @@
 
 	<div id="content">
 		<div id="title">Fleur (Nom scientifique)</div>
-		<div id="flowerNbr">Numéro : 0</div>
-		<div id="photoNbr">0 photographies disponibles</div>
-		<!--
-		<div class="basic-grid" id="photo"></div>
-
-		<div class="bottomInfos" id="originAndDate">Origine de la photographie : Paris<br>Date de la prise en photo : 00/00/0000</div>
-		-->
+		<div id="subtitle">Fleur (Nom scientifique)</div>
 	</div>
-
-	<div id="photo"></div>
 	
+	<div id="photoNbr">0 photographies disponibles</div>
+
+	<div id="photos" class="basic-grid"></div>
+
+	<div id='zoomin' class='zoomin'>
+		<div onclick='closeIt()' id='dark-back'></div>
+		<div id='img-container'><img id='zoom-img' src='photos/flower1.png'></div>
+	</div>
 </body>
 
 </html>
