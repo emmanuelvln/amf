@@ -68,36 +68,38 @@ body {
     height: 35px;
 }
 
-#homeButtonImg {
-    height: 35px;
-    display: block;
+#menu {
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
 }
 
-#homeButton {
+#home-button {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
     height: 35px;
     width: 35px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
 }
 
-.lilButtonImg {
-    height: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
+.menu-button-img {
+    padding-top: 6px;
+    height: 22px;
 }
 
-.lilButton {
-    height: 35px;
-    width: 35px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+@keyframes slide {
+  0% {margin-top:0px;}
+  50% {margin-top:-32px;}
+  100% {margin-top:-32px;}
+}
+@keyframes slide2 {
+  0% {margin-top:-35px;}
+  50% {margin-top:0px;}
+  100% {margin-top:0px;}
 }
 
 .ribbonLeg {
@@ -154,7 +156,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 35px;
-    width: 30vw;
+    width: 35vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -173,7 +175,6 @@ body {
     font-size: 35px;
     font-family: Blanch;
     text-align: center;
-    margin-bottom: 35px;
 }
 
 .carte {
@@ -500,7 +501,7 @@ body {
 .basic-grid {
     margin-right: auto;
     margin-left: auto;
-    padding-top: 50px;
+    padding-top: 35px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
@@ -511,3 +512,4 @@ body {
     grid-template-columns: repeat(auto-fit, 248px);
     grid-auto-rows: 302px;
 }
+
