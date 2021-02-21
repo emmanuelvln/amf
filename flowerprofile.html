@@ -23,7 +23,6 @@
 			}
 
 			var found = sessionStorage.getItem('found');
-			console.log("SSS"+found);
 			if (found*258 > window.innerWidth) {
 				var test1 = (Math.trunc(window.innerWidth/258))*248+((Math.trunc(window.innerWidth/258))-1)*10
 				document.getElementById('photos').style.width = test1+"px";
@@ -94,6 +93,12 @@
 				document.getElementById("zoomin").innerHTML = "<div id='dark-back'></div><div onclick='closeIt()' id='img-container'><img id='zoom-img' src='photos/flower"+numero+".png'></div>";
 			}
 			document.getElementById("zoomin").style.display = "block";
+
+			if (window.innerWidth > window.innerHeight) {
+				document.getElementById('zoom-img').style.height = "80vh";
+			} else {
+				document.getElementById('zoom-img').style.height = "80vw";
+			}
 		}
 
 		
@@ -126,8 +131,8 @@
 	</div>
 
 	<div id="content">
-		<div id="title">Fleur (Nom scientifique)</div>
-		<div id="subtitle">Fleur (Nom scientifique)</div>
+		<div id="title">Fleur</div>
+		<div id="subtitle">Fleur</div>
 	</div>
 	
 	<div id="photoNbr">0 photographies disponibles</div>
