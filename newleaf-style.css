@@ -23,6 +23,10 @@
     src: url('fonts/ConfigCondensed.otf');
 }
 
+*,*:focus,*:hover{
+    outline:none;
+}
+
 body {
     margin-top: 0;
     margin-bottom: 0;
