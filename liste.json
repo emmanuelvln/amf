@@ -857,11 +857,11 @@
     },
     {
         "numero": 108,
-        "nomscient": "Viola",
+        "nomscient": "Viola ×wittrockiana",
         "nom" : "Pensée cultivée",
         "lieu" : "Paris",
-        "date" : "16/12/2020",
-        "version" : 1
+        "date" : "17/04/2021",
+        "version" : 2
     },
     {
         "numero": 109,
@@ -1193,10 +1193,10 @@
     },
     {
         "numero": 150,
-        "nomscient": "Viola ×wittrockiana",
-        "nom" : "Pensée cultivée",
-        "lieu" : "Paris",
-        "date" : "17/04/2021",
+        "nomscient": "Prunus cerasus",
+        "nom" : "Cerisier acide",
+        "lieu" : "Saint-Rémy-de-Provence",
+        "date" : "21/04/2021",
         "version" : 1
     },
     {
@@ -1213,14 +1213,6 @@
         "nom" : "Pommier paradis",
         "lieu" : "Paris",
         "date" : "17/04/2021",
-        "version" : 1
-    },
-    {
-        "numero": 153,
-        "nomscient": "Prunus cerasus",
-        "nom" : "Cerisier acide",
-        "lieu" : "Saint-Rémy-de-Provence",
-        "date" : "21/04/2021",
         "version" : 1
     }
 ]
