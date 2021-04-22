@@ -83,7 +83,7 @@
 		function goTop() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
-			$('#goTopButton').fadeOut();
+			$('#gotop-button').fadeOut();
 			windowScroll = false;
 		}
 
@@ -91,12 +91,12 @@
 		$(window).scroll(function(){
 			if (!windowScroll) {
 				if($(window).scrollTop()>=500){
-					$('#goTopButton').fadeIn();
+					$('#gotop-button').fadeIn();
 					windowScroll = true;
 				}
 			} else {
 				if($(window).scrollTop()<=500){
-					$('#goTopButton').fadeOut();
+					$('#gotop-button').fadeOut();
 					windowScroll = false;
 				}
 			}
@@ -116,11 +116,11 @@
 		}
 
 		function goTopShade() {
-			document.getElementById("goTopButton").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='goTopButtonImg' src='imgs/gotopbutton2.png'></a>";
+			document.getElementById("gotop-button").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='gotop-img' src='imgs/gotopbutton2.png'></a>";
 		}
 
 		function goTopUnshade() {
-			document.getElementById("goTopButton").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='goTopButtonImg' src='imgs/gotopbutton1.png'></a>";
+			document.getElementById("gotop-button").innerHTML = "<a onmouseover='goTopShade()' onmouseout='goTopUnshade()' onclick='goTop()'><img id='gotop-img' src='imgs/gotopbutton1.png'></a>";
 		}
 
 		function openPlus(string) {
@@ -187,8 +187,8 @@
 
 	<!-- GO TOP BUTTON -->
 
-	<div id="goTopButton">
-		<a onmouseover="goTopShade()" onmouseout="goTopUnshade()" onclick="goTop()"><img id="goTopButtonImg" src="imgs/gotopbutton1.png"></a>
+	<div id="gotop-button">
+		<a onmouseover="goTopShade()" onmouseout="goTopUnshade()" onclick="goTop()"><img id="gotop-img" src="imgs/gotopbutton1.png"></a>
 	</div>
 
 	<!-- PHOTOS GRID -->
