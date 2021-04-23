@@ -8,5 +8,455 @@
         "caractere": "か",
         "alphabet": "hiragana",
         "prononciation": "ka"
+    },
+    {
+        "caractere": "さ",
+        "alphabet": "hiragana",
+        "prononciation": "sa"
+    },
+    {
+        "caractere": "た",
+        "alphabet": "hiragana",
+        "prononciation": "ta"
+    },
+    {
+        "caractere": "な",
+        "alphabet": "hiragana",
+        "prononciation": "na"
+    },
+    {
+        "caractere": "は",
+        "alphabet": "hiragana",
+        "prononciation": "ha"
+    },
+    {
+        "caractere": "ま",
+        "alphabet": "hiragana",
+        "prononciation": "ma"
+    },
+    {
+        "caractere": "や",
+        "alphabet": "hiragana",
+        "prononciation": "ya"
+    },
+    {
+        "caractere": "ら",
+        "alphabet": "hiragana",
+        "prononciation": "ra"
+    },
+    {
+        "caractere": "わ",
+        "alphabet": "hiragana",
+        "prononciation": "wa"
+    },
+    {
+        "caractere": "い",
+        "alphabet": "hiragana",
+        "prononciation": "i"
+    },
+    {
+        "caractere": "き",
+        "alphabet": "hiragana",
+        "prononciation": "ki"
+    },
+    {
+        "caractere": "し",
+        "alphabet": "hiragana",
+        "prononciation": "si"
+    },
+    {
+        "caractere": "ち",
+        "alphabet": "hiragana",
+        "prononciation": "ti"
+    },
+    {
+        "caractere": "に",
+        "alphabet": "hiragana",
+        "prononciation": "ni"
+    },
+    {
+        "caractere": "ひ",
+        "alphabet": "hiragana",
+        "prononciation": "hi"
+    },
+    {
+        "caractere": "み",
+        "alphabet": "hiragana",
+        "prononciation": "mi"
+    },
+    {
+        "caractere": "り",
+        "alphabet": "hiragana",
+        "prononciation": "ri"
+    },
+    {
+        "caractere": "う",
+        "alphabet": "hiragana",
+        "prononciation": "u"
+    },
+    {
+        "caractere": "く",
+        "alphabet": "hiragana",
+        "prononciation": "ku"
+    },
+    {
+        "caractere": "す",
+        "alphabet": "hiragana",
+        "prononciation": "su"
+    },
+    {
+        "caractere": "つ",
+        "alphabet": "hiragana",
+        "prononciation": "tu"
+    },
+    {
+        "caractere": "ぬ",
+        "alphabet": "hiragana",
+        "prononciation": "nu"
+    },
+    {
+        "caractere": "ふ",
+        "alphabet": "hiragana",
+        "prononciation": "hu"
+    },
+    {
+        "caractere": "む",
+        "alphabet": "hiragana",
+        "prononciation": "mu"
+    },
+    {
+        "caractere": "ゆ",
+        "alphabet": "hiragana",
+        "prononciation": "yu"
+    },
+    {
+        "caractere": "る",
+        "alphabet": "hiragana",
+        "prononciation": "ru"
+    },
+    {
+        "caractere": "え",
+        "alphabet": "hiragana",
+        "prononciation": "e"
+    },
+    {
+        "caractere": "け",
+        "alphabet": "hiragana",
+        "prononciation": "ke"
+    },
+    {
+        "caractere": "せ",
+        "alphabet": "hiragana",
+        "prononciation": "se"
+    },
+    {
+        "caractere": "て",
+        "alphabet": "hiragana",
+        "prononciation": "te"
+    },
+    {
+        "caractere": "ね",
+        "alphabet": "hiragana",
+        "prononciation": "ne"
+    },
+    {
+        "caractere": "へ",
+        "alphabet": "hiragana",
+        "prononciation": "he"
+    },
+    {
+        "caractere": "め",
+        "alphabet": "hiragana",
+        "prononciation": "me"
+    },
+    {
+        "caractere": "め",
+        "alphabet": "hiragana",
+        "prononciation": "re"
+    },
+    {
+        "caractere": "お",
+        "alphabet": "hiragana",
+        "prononciation": "o"
+    },
+    {
+        "caractere": "こ",
+        "alphabet": "hiragana",
+        "prononciation": "ko"
+    },
+    {
+        "caractere": "そ",
+        "alphabet": "hiragana",
+        "prononciation": "so"
+    },
+    {
+        "caractere": "と",
+        "alphabet": "hiragana",
+        "prononciation": "to"
+    },
+    {
+        "caractere": "と",
+        "alphabet": "hiragana",
+        "prononciation": "no"
+    },
+    {
+        "caractere": "ほ",
+        "alphabet": "hiragana",
+        "prononciation": "ho"
+    },
+    {
+        "caractere": "も",
+        "alphabet": "hiragana",
+        "prononciation": "mo"
+    },
+    {
+        "caractere": "よ",
+        "alphabet": "hiragana",
+        "prononciation": "yo"
+    },
+    {
+        "caractere": "ろ",
+        "alphabet": "hiragana",
+        "prononciation": "ro"
+    },
+    {
+        "caractere": "を",
+        "alphabet": "hiragana",
+        "prononciation": "wo"
+    },
+    {
+        "caractere": "ん",
+        "alphabet": "hiragana",
+        "prononciation": "n"
+    },
+    {
+        "caractere": "ア",
+        "alphabet": "katakana",
+        "prononciation": "a"
+    },
+    {
+        "caractere": "カ",
+        "alphabet": "katakana",
+        "prononciation": "ka"
+    },
+    {
+        "caractere": "サ",
+        "alphabet": "katakana",
+        "prononciation": "sa"
+    },
+    {
+        "caractere": "タ",
+        "alphabet": "katakana",
+        "prononciation": "ta"
+    },
+    {
+        "caractere": "ナ",
+        "alphabet": "katakana",
+        "prononciation": "na"
+    },
+    {
+        "caractere": "ハ",
+        "alphabet": "katakana",
+        "prononciation": "ha"
+    },
+    {
+        "caractere": "マ",
+        "alphabet": "katakana",
+        "prononciation": "ma"
+    },
+    {
+        "caractere": "ヤ",
+        "alphabet": "katakana",
+        "prononciation": "ya"
+    },
+    {
+        "caractere": "ラ",
+        "alphabet": "katakana",
+        "prononciation": "ra"
+    },
+    {
+        "caractere": "ワ",
+        "alphabet": "katakana",
+        "prononciation": "wa"
+    },
+    {
+        "caractere": "イ",
+        "alphabet": "katakana",
+        "prononciation": "i"
+    },
+    {
+        "caractere": "キ",
+        "alphabet": "katakana",
+        "prononciation": "ki"
+    },
+    {
+        "caractere": "シ",
+        "alphabet": "katakana",
+        "prononciation": "si"
+    },
+    {
+        "caractere": "チ",
+        "alphabet": "katakana",
+        "prononciation": "ti"
+    },
+    {
+        "caractere": "ニ",
+        "alphabet": "katakana",
+        "prononciation": "ni"
+    },
+    {
+        "caractere": "ヒ",
+        "alphabet": "katakana",
+        "prononciation": "hi"
+    },
+    {
+        "caractere": "ミ",
+        "alphabet": "katakana",
+        "prononciation": "mi"
+    },
+    {
+        "caractere": "リ",
+        "alphabet": "katakana",
+        "prononciation": "ri"
+    },
+    {
+        "caractere": "ヌ",
+        "alphabet": "katakana",
+        "prononciation": "u"
+    },
+    {
+        "caractere": "ク",
+        "alphabet": "katakana",
+        "prononciation": "ku"
+    },
+    {
+        "caractere": "ス",
+        "alphabet": "katakana",
+        "prononciation": "su"
+    },
+    {
+        "caractere": "ツ",
+        "alphabet": "katakana",
+        "prononciation": "tu"
+    },
+    {
+        "caractere": "ヌ",
+        "alphabet": "katakana",
+        "prononciation": "nu"
+    },
+    {
+        "caractere": "フ",
+        "alphabet": "katakana",
+        "prononciation": "hu"
+    },
+    {
+        "caractere": "ム",
+        "alphabet": "katakana",
+        "prononciation": "mu"
+    },
+    {
+        "caractere": "ユ",
+        "alphabet": "katakana",
+        "prononciation": "yu"
+    },
+    {
+        "caractere": "ル",
+        "alphabet": "katakana",
+        "prononciation": "ru"
+    },
+    {
+        "caractere": "エ",
+        "alphabet": "katakana",
+        "prononciation": "e"
+    },
+    {
+        "caractere": "ケ",
+        "alphabet": "katakana",
+        "prononciation": "ke"
+    },
+    {
+        "caractere": "セ",
+        "alphabet": "katakana",
+        "prononciation": "se"
+    },
+    {
+        "caractere": "テ",
+        "alphabet": "katakana",
+        "prononciation": "te"
+    },
+    {
+        "caractere": "ネ",
+        "alphabet": "katakana",
+        "prononciation": "ne"
+    },
+    {
+        "caractere": "ヘ",
+        "alphabet": "katakana",
+        "prononciation": "he"
+    },
+    {
+        "caractere": "メ",
+        "alphabet": "katakana",
+        "prononciation": "me"
+    },
+    {
+        "caractere": "レ",
+        "alphabet": "katakana",
+        "prononciation": "re"
+    },
+    {
+        "caractere": "オ",
+        "alphabet": "katakana",
+        "prononciation": "o"
+    },
+    {
+        "caractere": "コ",
+        "alphabet": "katakana",
+        "prononciation": "ko"
+    },
+    {
+        "caractere": "ソ",
+        "alphabet": "katakana",
+        "prononciation": "so"
+    },
+    {
+        "caractere": "ト",
+        "alphabet": "katakana",
+        "prononciation": "to"
+    },
+    {
+        "caractere": "ノ",
+        "alphabet": "katakana",
+        "prononciation": "no"
+    },
+    {
+        "caractere": "ホ",
+        "alphabet": "katakana",
+        "prononciation": "ho"
+    },
+    {
+        "caractere": "モ",
+        "alphabet": "katakana",
+        "prononciation": "mo"
+    },
+    {
+        "caractere": "ヨ",
+        "alphabet": "katakana",
+        "prononciation": "yo"
+    },
+    {
+        "caractere": "ロ",
+        "alphabet": "katakana",
+        "prononciation": "ro"
+    },
+    {
+        "caractere": "ヲ",
+        "alphabet": "katakana",
+        "prononciation": "wo"
+    },
+    {
+        "caractere": "ン",
+        "alphabet": "katakana",
+        "prononciation": "n"
     }
 ]
