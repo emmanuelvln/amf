@@ -1,21 +1,22 @@
 @font-face {
     font-family: Evogria;
-    src: url('fonts/Evogria.otf');
+    src: url('../fonts/Evogria.otf');
 }
-
 @font-face {
     font-family: Sofia;
-    src: url('fonts/Sofia.otf');
+    src: url('../fonts/Sofia.otf');
 }
-
 @font-face {
     font-family: Blanch;
-    src: url('fonts/Blanch.otf');
+    src: url('../fonts/Blanch.otf');
 }
-
 @font-face {
     font-family: KaushanScript;
-    src: url('fonts/KaushanScript.otf');
+    src: url('../fonts/KaushanScript.otf');
+}
+@font-face {
+    font-family: ConfigCondensed;
+    src: url('../fonts/ConfigCondensed.otf');
 }
 
 html {
