@@ -5,10 +5,12 @@
 @font-face {
     font-family: Sofia;
     src: url('../fonts/Sofia.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: Blanch;
     src: url('../fonts/Blanch.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: KaushanScript;
