@@ -229,7 +229,7 @@ body {
 }
 
 .tiles:hover .photo {
-    height: 230px;
+    height: 216px;
     transition-duration: 300ms;
     filter: brightness(0.7)  blur(2px); 
 }
