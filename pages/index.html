@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta property="og:image" content="https://emmanuelvln.github.io/amf/photos/flower2.png" />
+	<meta property="og:description" content="A small gallery to display my flower photographs." />
+	<meta property="og:url"content="https://emmanuelvln.github.io/amf/" />
+	<meta property="og:title" content="always more flowers" />
+	
+	<link rel="icon" href="https://raw.githubusercontent.com/emmanuelvln/amf/master/imgs/favicon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="../styles/index-style.css">
+
+	<title>always more flowers</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../scripts/index.js"></script>
+</head>
+
+<body>
+
+	<!-- HEADER ALWAYS MORE FLOWERS -->
+
+	<div id="header">always more flowers</div>
+
+	<!-- TOP RIBBON -->
+
+	<div id="ribbonTop"> 
+	    <img class="ribbonImg" src="../imgs/ruban1.png">
+	    <a class="ribbonText">I want more flowers!</a>
+	</div>
+
+	<!-- NAVIGATION MENU -->
+
+	<div id="menu">
+		<div id="search-button" onmouseover="slideUp('search-slider1')" onmouseout="slideDown('search-slider1')">
+			<a href="search.html">
+				<div id="search-slider1"><img class="menu-button-img" src="../imgs/tsearchbutton.png"></div>
+				<div id="search-slider2"><img class="menu-button-img" src="../imgs/tsearchbutton.png"></div>
+			</a>
+		</div>
+
+		<div id="info-button" onmouseover="slideUp('info-slider1')" onmouseout="slideDown('info-slider1')">
+			<a href="info.html">
+				<div id="info-slider1"><img class="menu-button-img" src="../imgs/tinfobutton.png"></div>
+				<div id="info-slider2"><img class="menu-button-img" src="../imgs/tinfobutton.png"></div>
+			</a>
+		</div>
+
+		<div id="leaf-button" onmouseover="slideUp('leaf-slider1')" onmouseout="slideDown('leaf-slider1')">
+			<a href="newleaf.html">
+				<div id="leaf-slider1"><img class="menu-button-img" src="../imgs/tleafbutton.png"></div>
+				<div id="leaf-slider2"><img class="menu-button-img" src="../imgs/tleafbutton.png"></div>
+			</a>
+		</div>
+	</div>
+
+	<!-- GO TOP BUTTON -->
+
+	<div id="gotop-button">
+		<a onmouseover="goTopShade()" onmouseout="goTopUnshade()" onclick="goTop()"><img id="gotop-img" src="../imgs/gotopbutton1.png"></a>
+	</div>
+
+	<!-- PHOTOS GRID -->
+
+	<div class="basic-grid" id="content">
+	</div>
+
+	<!-- BOTTOM RIBBON -->
+
+	<div id="ribbonBot">
+		<img class="ribbonImg" src="../imgs/ruban1.png">
+	    <div class="ribbonText" id="ribbonText" onclick="makeItSmile();">that's all folks!</div>
+	</div>
+
+</body>
+
+</html>

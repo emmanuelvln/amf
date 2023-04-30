@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="https://raw.githubusercontent.com/emmanuelvln/amf/master/imgs/favicon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="../styles/newleaf-style.css">
+
+	<title>always more flowers</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../scripts/newleaf.js"></script>
+</head>
+
+<body>
+
+<!-- EN-TÊTE -->
+
+	<div id="header">always more flowers</div>
+
+	<div id="ribbonTop">
+	    <img id="ribbonImg" src="../imgs/ruban1.png">
+	    <a id="ribbonText">I want more flowers!</a>
+	</div>
+
+	<div id="menu">
+		<div id="home-button" onmouseover="slideUp('home-slider1')" onmouseout="slideDown('home-slider1')">
+			<a href="index.html">
+				<div id="home-slider1"><img class="menu-button-img" src="../imgs/thomebutton.png"></div>
+				<div id="home-slider2"><img class="menu-button-img" src="../imgs/thomebutton.png"></div>
+			</a>
+		</div>
+	</div>
+
+<!-- JEU -->
+
+	<div id="content">
+        <span id="title">PETIT QUIZZ</span>
+        <span class="subtitle" id="subtitle1">Essayez de deviner le nom de la fleur affichée.</span>
+        <img id="thumbnail" src="../imgs/quizz-thumbnail.png">
+        <span class="subtitle" id="subtitle2">Une bonne réponse ? Plus un point et on continue !</span>
+        <span class="subtitle" id="subtitle3">Une mauvaise réponse ? Perdu ! et on recommence à 0.</span>
+
+        <button id="start-button" onclick="startGame()">
+            <span id="start-button-text" >C'est parti !</span>
+        </button>
+	</div>
+
+</body>
+
+</html>
