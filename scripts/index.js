@@ -42,7 +42,7 @@ function appendData(data) {
             numeroDisplay = "00"+data[i].numero
         }
 
-        $('#content').append("<div class='tiles'><div class='tile'><div class='frame'><img height='216' width='216' class='photo' src='../photos/flower"+data[i].numero+".png'></div><span class='number'>"+numeroDisplay+"</span><img onclick='openPlus("+i+")' class='plus' src='../imgs/plus.png'><span class='title'>" + data[i].nom + "</span><span class='details'>" + data[i].nomscient + "</span></div></div>");
+        $('#content').append("<div class='tiles'><div class='tile'><div class='frame'><img height='216' width='216' class='photo' src='photos/flower"+data[i].numero+".png'></div><span class='number'>"+numeroDisplay+"</span><img onclick='openPlus("+i+")' class='plus' src='imgs/plus.png'><span class='title'>" + data[i].nom + "</span><span class='details'>" + data[i].nomscient + "</span></div></div>");
     }
     if ($(window).width() < 450) {
         document.getElementById('menu').style.width = '300px';
@@ -87,7 +87,7 @@ $(window).scroll(function(){
 
 function flowerProfile(string) {
     sessionStorage.setItem('flower', string);
-    location.href = 'flowerprofile.html';
+    location.href = 'pages/flowerprofile.html';
 }
 
 function slideUp(string) {
@@ -108,5 +108,5 @@ function goTopUnshade() {
 
 function openPlus(string) {
     sessionStorage.setItem('flower', string);
-    location.href = 'flowerprofile.html';
+    location.href = 'pages/flowerprofile.html';
 }
